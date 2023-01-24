@@ -322,9 +322,9 @@ section .header {
 }
 
 .header-nav.open {
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
-    -webkit-transition: opacity;
+    -webkit-transition: opacity 1s;
     transition: opacity 1s
 }
 
@@ -404,7 +404,7 @@ section .header {
     height: 26px;
     right: 10px;
     top: 48px;
-    visibility: visible;
+    visibility: hidden;
     -webkit-transition: all 300ms ease-in-out
 }
 
@@ -463,7 +463,7 @@ header {
     position: relative;
     width: 1170px;
     margin: 0 auto;
-    transition: padding 300ms ease-in-out
+    -webkit-transition: padding 300ms ease-in-out
 }
 
 header a {
