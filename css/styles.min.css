@@ -300,12 +300,6 @@ section .header {
 .wp9 {visibility: visible
 }
 
-.wp8,
-.wp9 {
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s
-}
-
 .bounceInLeft,
 .bounceInRight,
 .fadeInUp,
@@ -491,12 +485,12 @@ header ul.primary-nav li {
 }
 
 header ul.primary-nav li a {
-    color: #fff;
+    color: rgb(179, 164, 161);
     padding-right: 25px
 }
 
 header ul.primary-nav li a:hover {
-    color: #e8ca6f
+    color: rgb(124, 115, 115);
 }
 
 header ul.primary-nav li:last-child a {
@@ -512,7 +506,7 @@ header ul.member-actions li a {
 }
 
 header ul.member-actions li a:hover {
-    color: #e8ca6f
+    color: rgb(124, 115, 115);
 }
 
 header .header-nav {
