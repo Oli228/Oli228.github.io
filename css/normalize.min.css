@@ -48,7 +48,7 @@ template {
 }
 
 a {
-	background-color: #ACB1B4
+	background-color: transparent
 }
 
 a:active,
@@ -62,7 +62,7 @@ abbr[title] {
 
 b,
 strong {
-	font-weight: 1000
+	font-weight: 700
 }
 
 dfn {
