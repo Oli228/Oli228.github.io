@@ -2,6 +2,18 @@
 @import"https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic";
 @import"https://fonts.googleapis.com/css?family=Nunito:400,300,700";
 
+details { margin:5px 0 10px; }
+details > summary { background:#D4CAC7; color:black; padding:10px; outline:0; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
+details > summary::-webkit-details-marker { background:#D4CAC7; color:black; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;}
+details[open] > summary::-webkit-details-marker { transform:rotate3d(0, 0, 1, 180deg);}
+details[open] > summary { background:#D4CAC7;}
+details[open] > summary ~ * { animation:reveal 0.5s;}
+.tpt { background:#D4CAC7; color:black; margin:5px 0 10px; padding:5px 10px; line-height:25px; }
+@keyframes reveal {
+    from { opacity:0; transform:translate3d(0, -30px, 0); }
+    to { opacity:1; transform:translate3d(0, 0, 0); }
+}
+
 p {
     font-size: 16px;
     line-height: 29px;
@@ -313,7 +325,7 @@ section .header {
 }
 
 .header-nav.open {
-    visibility: visible;
+    visibility: hidden;
     opacity: .9;
     -webkit-transition: opacity .5s;
     transition: opacity .5s
@@ -395,7 +407,7 @@ section .header {
     height: 26px;
     right: 10px;
     top: 48px;
-    visibility: hidden;
+    visibility: visible;
     transition: all 300ms ease-in-out
 }
 
@@ -830,8 +842,8 @@ header .member-actions {
 
 #eng-pics .img-wrap {
     position: relative;
-    overflow: hidden;
-    border-radius: 4px
+    overflow: visible;
+    border-radius: 3px
 }
 
 #eng-pics .img-wrap .overlay {
@@ -1055,7 +1067,7 @@ footer .to-top-wrapper {
 }
 
 footer .to-top-wrapper .to-top {
-    display: block;
+    display: contents;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
