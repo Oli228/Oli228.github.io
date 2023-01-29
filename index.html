@@ -36,7 +36,13 @@
     <script src="./js/scripts.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@300;400;700&family=Noto+Sans+KR:wght@400;900&display=swap');
-    </style>
+        @font-face {
+            font-family: 'MapoFlowerIsland';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+}
+</style>
 </head>
 
 <body id="top">
@@ -47,16 +53,16 @@
                 <div class="header-content">
                     <div class="header-nav">
                         <nav class="header-content">
-                            <ul class="primary-nav">
+                            <ul class="primary-nav" style="font-family:MapoFlowerIsland">
                                 <li><a href="#"><img src="img/logo.png" width="10%"></a></li>
                                 <li><a href="#intro"> 용준🍑소현 </a></li>
                                 <li><a href="#events"> 결혼식 소개 </a></li>
                                 <li><a href="#prep_process"> 준비 과정 </a></li>
                                 <li><a href="#eng-pics"> 웨딩 사진 </a></li>
                             </ul>
-                            <ul class="member-actions">
+                            <ul class="member-actions" style="font-family:MapoFlowerIsland">
                                 <li>
-                                    <a href="#map" class="btn-white btn-small" style="color:rgb(1, 1, 1)">
+                                    <a href="#map" class="btn-white" style="color:rgb(1, 1, 1)">
                                         장소 </a>
                                 </li>
                             </ul>
@@ -74,8 +80,8 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="hero-content text-center">
-                        <img src="./img/logo-lg.png">
-                        <p class="intro"> You are invited to our wedding! </p>
+                        <h1 class="intro" style="color:rgba(28, 54, 83, .6); font-family:MapoFolowerIsland"> 용준 🍑 소현 </h1>
+                        <p class="intro" style="color:rgba(28, 54, 83, .6); font-family:MapoFlowerIsland"> 결혼식에 초대합니다. </p>
                     </div>
                 </div>
             </div>
@@ -84,7 +90,7 @@
     </section>
 
     <section id="invitation" class="section-padding">
-        <div class="container" style="font-family:'IBM Plex Sans KR'">
+        <div class="container" style="font-family:'MapoFlowerIsland'">
             <div class="row">
                 <div class="col-md-12 row- text-center"><br><br><br>
                     <h2> 결혼합니다 </h2>
@@ -115,11 +121,11 @@
     <section id="intro">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center" style="font-family:'IBM Plex Sans KR', sans-serif">
+                <div class="col-md-12 text-center" style="font-family:'MapoFlowerIsland'">
                     <h3 class="header"> 예비부부 용준🍑소현 소개합니다. </h3>
                 </div>
             </div>
-            <div class="row" style="font-family:'Noto Sans KR', sans-serif">
+            <div class="row" style="font-family:'MapoFlowerIsland'">
                 <!--<div class="col-md-2 col-md-offset-1"><img src="./img/yj.png" class="wp1"></div>-->
                 <div class="col-md-6 col-md-offset-0">
                     <p style="text-align:justify">
@@ -152,7 +158,7 @@
     </section>
 
     <!--결혼식소개-->
-    <section class="events section-padding" id="events" style="font-family:'IBM Plex Sans KR', sans-serif;">
+    <section class="events section-padding" id="events" style="font-family:'MapoFlowerIsland'">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -161,7 +167,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="wp3">
+                    <div class="wp5">
                         <p><strong> 결혼식 순서 </strong></p>
 
                         <h5> 식전 사진 촬영 <span class="time"> 10시 ~ 11시 </span></h5>
@@ -180,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                    <div class="wp4">
+                    <div class="wp6">
                         <p><strong> 기타사항 </strong></p>
                         <h5> 식장 </h5>
                         <p> 식장이 협소하여 앉을 자리가 부족할 수 있는 점 양해 부탁드리겠습니다. </p>
@@ -243,7 +249,7 @@
     </section>
 
     <!--준비과정-->
-    <section id="prep_process" class="section-padding" style="font-family:'IBM Plex Sans KR', sans-serif;">
+    <section id="prep_process" class="section-padding" style="font-family:'MapoFlowerIsland'">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -255,8 +261,9 @@
             </div>
             <details class="row" >
                 <summary class="text-center""> 용준🍑소현의 <strong>결혼 준비 과정</strong>이 궁금하다면 <strong>클릭</strong>하세요! 🥰 </summary>
-                <details class="col-md-12" >
-                    <summary style="background-color : white"> <br> <strong> 2022년 👆🏻 </strong></summary>
+                <!--2022년-->
+                <div style="background-color : white"> 
+                    <p><br> <strong> 2022년 </strong></p>
                 <div class="col-md-4 col-sm-9 col-xs-9 leftcol section-padding">
                     <div class="wp3">
                         <h5> 1월 </h5>
@@ -332,9 +339,10 @@
                             동유럽으로 신혼여행지를 확정했습니다. </p>
                     </div>
                 </div>
-                </details>
-                <details class="col-md-4" >
-                    <summary style="background-color : white"> <br> <strong> 2023년 👆🏻</strong></summary>
+                </div>
+                <!--2023년-->
+                <div style="background-color : white"> 
+                    <p><br> <strong> 2023년 </strong></p>
                 <div class="col-md-12 col-sm-9 col-xs-9 rightcol section-padding">
                      <div class="wp3">
                         <h5> 1월 </h5>
@@ -363,7 +371,7 @@
                             결혼식 진행을 위해 도와주신 분들 덕분에 수월하게 준비를 마칩니다. </p>
                     </div>
                 </div>
-                </details>
+                </div>
             </details>
         </div>
         <div>

@@ -57,7 +57,7 @@ h5 {
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
-    display: inline-block;
+    display: block;
     text-transform: uppercase
 }
 
@@ -74,7 +74,7 @@ h5 {
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
-    display: inline-block;
+    display: block;
     border-color: #fff
 }
 
@@ -1067,7 +1067,7 @@ footer .to-top-wrapper {
 }
 
 footer .to-top-wrapper .to-top {
-    display: contents;
+    display: block;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
