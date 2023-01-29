@@ -3,12 +3,12 @@
 @import"https://fonts.googleapis.com/css?family=Nunito:400,300,700";
 
 details { margin:5px 0 10px; }
-details > summary { background:#D4CAC7; color:black; padding:10px; outline:0; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
-details > summary::-webkit-details-marker { background:#D4CAC7; color:black; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;}
+details > summary { background:#EADBD8; color:black; padding:10px; outline:0; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
+details > summary::-webkit-details-marker { background:#EADBD8; color:black; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;}
 details[open] > summary::-webkit-details-marker { transform:rotate3d(0, 0, 1, 180deg);}
-details[open] > summary { background:#D4CAC7;}
+details[open] > summary { background:#EADBD8;}
 details[open] > summary ~ * { animation:reveal 0.5s;}
-.tpt { background:#D4CAC7; color:black; margin:5px 0 10px; padding:5px 10px; line-height:25px; }
+.tpt { background:#EADBD8; color:black; margin:5px 0 10px; padding:5px 10px; line-height:25px; }
 @keyframes reveal {
     from { opacity:0; transform:translate3d(0, -30px, 0); }
     to { opacity:1; transform:translate3d(0, 0, 0); }
