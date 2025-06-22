@@ -1,93 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>오리의 공유서재</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="오리의 공유서재">
-<meta property="og:url" content="https://oli228.github.io/page/6/index.html">
-<meta property="og:site_name" content="오리의 공유서재">
-<meta property="og:locale" content="ko_KR">
-<meta property="article:author" content="진소현">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="오리의 공유서재" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>오리의 공유서재</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="오리의 공유서재"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="오리의 공유서재"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="오리의 공유서재"><meta property="og:url" content="https://oli228.github.io/"><meta property="og:site_name" content="오리의 공유서재"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://oli228.github.io/img/og_image.png"><meta property="article:author" content="진소현"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://oli228.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://Oli228.github.io"},"headline":"오리의 공유서재","image":["https://oli228.github.io/img/og_image.png"],"author":{"@type":"Person","name":"진소현"},"publisher":{"@type":"Organization","name":"오리의 공유서재","logo":{"@type":"ImageObject","url":"https://oli228.github.io/img/logo.svg"}},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">오리의 공유서재</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">독서, 여행, 글 그리고 그림</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="검색"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="검색"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Oli228.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Reading Notes/Books/The White Book" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Books/The%20White%20Book/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T06:00:10.113Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="오리의 공유서재" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T06:00:10.113Z" title="2025. 6. 7. 오후 3:00:10">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T06:03:29.420Z" title="2025. 6. 7. 오후 3:03:29">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">몇 초안에 읽기 (약 59 단어)</span></div></div><div class="content"><hr>
 <p>#요약</p>
 <ul>
 <li>흰색사물 65개를 중심으로 쓴 산문, 시, 소설의 혼합체</li>
@@ -116,63 +58,7 @@
 <p>- </p>
 <hr>
 <p>#관련책&#x2F;주제</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Books/The%20White%20Book/" data-id="cmc7p48m4002327ie2jri1cg9" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Author/한강" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Author/%ED%95%9C%EA%B0%95/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:52:56.328Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Author/%ED%95%9C%EA%B0%95/" data-id="cmc7p48m1001h27ieauj817sj" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Books/Human Acts" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Books/Human%20Acts/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:52:34.644Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:52:56.328Z" title="2025. 6. 7. 오후 2:52:56">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T05:53:16.586Z" title="2025. 6. 7. 오후 2:53:16">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">몇 초안에 읽기 (약 44 단어)</span></div></div><div class="content"><h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:52:34.644Z" title="2025. 6. 7. 오후 2:52:34">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T05:59:49.073Z" title="2025. 6. 7. 오후 2:59:49">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">2분안에 읽기 (약 259 단어)</span></div></div><div class="content"><hr>
 <p>#요약</p>
 <p>- </p>
 <hr>
@@ -207,35 +93,7 @@
 </ul>
 <hr>
 <p>#관련책&#x2F;주제</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Books/Human%20Acts/" data-id="cmc7p48m2001o27ie7j211n8v" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Books/My Brilliant Friend" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Books/My%20Brilliant%20Friend/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:43:45.518Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:43:45.518Z" title="2025. 6. 7. 오후 2:43:45">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T05:50:09.475Z" title="2025. 6. 7. 오후 2:50:09">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">5분안에 읽기 (약 807 단어)</span></div></div><div class="content"><hr>
 <p>#요약</p>
 <ul>
 <li><p>어린 시절 유난히 당차고 똑똑한 친구가 있다. 타고난 지성과 당찬 성격으로 주변을 압도하며 빛나는 아이.</p>
@@ -296,63 +154,7 @@
 </ul>
 <hr>
 <p>#관련책&#x2F;주제</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Books/My%20Brilliant%20Friend/" data-id="cmc7p48m3001r27iefjv9bmce" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Author/Elena Ferrante" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Author/Elena%20Ferrante/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:42:12.872Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Author/Elena%20Ferrante/" data-id="cmc7p48lu000727ie3g7s9qhy" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Books/동물농장" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Books/%EB%8F%99%EB%AC%BC%EB%86%8D%EC%9E%A5/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:29:55.985Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:42:12.872Z" title="2025. 6. 7. 오후 2:42:12">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T05:43:40.523Z" title="2025. 6. 7. 오후 2:43:40">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">몇 초안에 읽기 (약 44 단어)</span></div></div><div class="content"><h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:29:55.985Z" title="2025. 6. 7. 오후 2:29:55">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T05:39:16.277Z" title="2025. 6. 7. 오후 2:39:16">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">3분안에 읽기 (약 502 단어)</span></div></div><div class="content"><hr>
 <p>#요약</p>
 <p>- </p>
 <hr>
@@ -407,37 +209,7 @@
 </ul>
 <hr>
 <p>#관련책&#x2F;주제</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Books/%EB%8F%99%EB%AC%BC%EB%86%8D%EC%9E%A5/" data-id="cmc7p48m6002o27ie3jx57vgx" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%EB%94%94%EC%8A%A4%ED%86%A0%ED%94%BC%EC%95%84%EC%86%8C%EC%84%A4/" rel="tag">#디스토피아소설</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Books/1984" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Books/1984/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:15:34.682Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:15:34.682Z" title="2025. 6. 7. 오후 2:15:34">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-22T06:23:27.052Z" title="2025. 6. 22. 오후 3:23:27">2025-06-22</time>&nbsp;업데이트 됨</span><span class="level-item">2분안에 읽기 (약 329 단어)</span></div></div><div class="content"><hr>
 <p>#요약</p>
 <ul>
 <li>1949년에 1984년을 상상하며 쓴 디스토피아 소설.   </li>
@@ -485,37 +257,7 @@
 </ul>
 <hr>
 <p>#관련책&#x2F;주제</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Books/1984/" data-id="cmc7p48m1001j27ie16ub7ecl" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Orwellian/" rel="tag">#Orwellian</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Author/George Orwell" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/07/Reading%20Notes/Author/George%20Orwell/" class="article-date">
-  <time class="dt-published" datetime="2025-06-07T05:08:47.813Z" itemprop="datePublished">2025-06-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><p>소설</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-07T05:08:47.813Z" title="2025. 6. 7. 오후 2:08:47">2025-06-07</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T05:29:54.275Z" title="2025. 6. 7. 오후 2:29:54">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">1분안에 읽기 (약 130 단어)</span></div></div><div class="content"><h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><p>소설</p>
 <ul>
 <li>[[동물농장]]</li>
 <li>[[1984]]</li>
@@ -529,213 +271,59 @@
 <li>[[위건 부두로 가는 길 (1937)]]</li>
 <li>[[런던과 파리의 밑바닥에서 (1933)]]</li>
 </ul>
-<h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/07/Reading%20Notes/Author/George%20Orwell/" data-id="cmc7p48lx000f27iefq978qij" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Author/Harper Lee" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/06/Reading%20Notes/Author/Harper%20Lee/" class="article-date">
-  <time class="dt-published" datetime="2025-06-06T13:29:46.819Z" itemprop="datePublished">2025-06-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><ul>
+<h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-06T13:29:46.819Z" title="2025. 6. 6. 오후 10:29:46">2025-06-06</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-06T13:34:17.008Z" title="2025. 6. 6. 오후 10:34:17">2025-06-06</time>&nbsp;업데이트 됨</span><span class="level-item">몇 초안에 읽기 (약 52 단어)</span></div></div><div class="content"><h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><ul>
 <li>[[To kill a Mokingbird]]</li>
 <li>Go set a watchman</li>
 </ul>
-<h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/06/Reading%20Notes/Author/Harper%20Lee/" data-id="cmc7p48ly000k27ieh38o1diw" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reading Notes/Author/Erich Fromm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/06/Reading%20Notes/Author/Erich%20Fromm/" class="article-date">
-  <time class="dt-published" datetime="2025-06-06T13:23:27.536Z" itemprop="datePublished">2025-06-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><ul>
+<h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-06-06T13:23:27.536Z" title="2025. 6. 6. 오후 10:23:27">2025-06-06</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2025-06-07T12:04:25.280Z" title="2025. 6. 7. 오후 9:04:25">2025-06-07</time>&nbsp;업데이트 됨</span><span class="level-item">몇 초안에 읽기 (약 64 단어)</span></div></div><div class="content"><h2 id="📘주요-저서"><a href="#📘주요-저서" class="headerlink" title="📘주요 저서"></a>📘주요 저서</h2><ul>
 <li>[[The Art of Loving]]</li>
 <li>Escape from Freedom</li>
 <li>To Have or To Be?</li>
 <li>The Sane Society</li>
 <li>The Anatomy of Human Destructiveness</li>
 </ul>
-<h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://oli228.github.io/2025/06/06/Reading%20Notes/Author/Erich%20Fromm/" data-id="cmc7p48lv000a27ie4bzrh2z5" data-title="" class="article-share-link"><span class="fa fa-share">공유</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%EC%9E%90%EB%B3%B8%EC%A3%BC%EC%9D%98%EB%B9%84%ED%8C%90/" rel="tag">#자본주의비판</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/page/5/">&laquo; 이전</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/7/">다음 &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">카테고리</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%EC%84%9C%EC%88%A0-%EC%8B%9C%EC%A0%90/">서술 시점</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">태그</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kafkaesque/" rel="tag">#Kafkaesque</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Orwellian/" rel="tag">#Orwellian</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SF/" rel="tag">#SF</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B3%84%EB%AA%BD%EC%A3%BC%EC%9D%98/" rel="tag">#계몽주의</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B3%A0%EC%A0%84/" rel="tag">#고전</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B3%A0%EC%A0%84%EC%A3%BC%EC%9D%98/" rel="tag">#고전주의</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B3%BC%ED%95%99/" rel="tag">#과학</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B8%88%EC%84%9C/" rel="tag">#금서</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EB%82%AD%EB%A7%8C%EC%A3%BC%EC%9D%98/" rel="tag">#낭만주의</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EB%8F%85%EC%9D%BC%EB%AC%B8%ED%95%99/" rel="tag">#독일문학</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EB%94%94%EC%8A%A4%ED%86%A0%ED%94%BC%EC%95%84%EC%86%8C%EC%84%A4/" rel="tag">#디스토피아소설</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EB%AA%B0%EB%9D%BD%EA%B7%80%EC%A1%B1/" rel="tag">#몰락귀족</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EB%B9%85%ED%86%A0%EB%A6%AC%EC%95%84%EC%8B%9C%EB%8C%80/" rel="tag">#빅토리아시대</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%82%AC%EB%9E%91/" rel="tag">#사랑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%86%8C%EC%84%A4/" rel="tag">#소설</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%8B%A4%EC%A1%B4%EC%A3%BC%EC%9D%98/" rel="tag">#실존주의</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%97%AC%EC%84%B1%EB%B3%80%ED%98%B8%EC%82%AC/" rel="tag">#여성변호사</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%98%81%EA%B5%AD%EB%9F%B0%EB%8D%98%EC%9C%A0%ED%95%99/" rel="tag">#영국런던유학</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%9E%90%EA%B8%B0%EA%B3%A0%EB%B0%B1/" rel="tag">#자기고백</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%9E%90%EA%B8%B0%ED%83%90%EC%83%89%EC%9D%98%EC%97%AC%EC%A0%95/" rel="tag">#자기탐색의여정</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%9E%90%EB%B3%B8%EC%A3%BC%EC%9D%98%EB%B9%84%ED%8C%90/" rel="tag">#자본주의비판</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%A1%B0%EC%A7%80%EC%95%84%EC%8B%9C%EB%8C%80/" rel="tag">#조지아시대</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%A7%91%EC%B0%A9/" rel="tag">#집착</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%B2%A0%ED%95%99/" rel="tag">#철학</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%ED%86%A8%EC%8A%A4%ED%86%A0%EC%9D%B4%EC%A3%BC%EC%9D%98/" rel="tag">#톨스토이주의</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90/" rel="tag">#한강공원</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EA%B3%A0%EC%A0%84/" rel="tag">고전</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EB%AC%B8%ED%95%99%EC%9D%B4%EB%A1%A0/" rel="tag">문학이론</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%84%9C%EC%82%AC%EA%B8%B0%EB%B2%95/" rel="tag">서사기법</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%EC%8B%9C%EC%A0%90/" rel="tag">시점</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">태그 클라우드</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Kafkaesque/" style="font-size: 10px;">#Kafkaesque</a> <a href="/tags/Orwellian/" style="font-size: 10px;">#Orwellian</a> <a href="/tags/SF/" style="font-size: 10px;">#SF</a> <a href="/tags/%EA%B3%84%EB%AA%BD%EC%A3%BC%EC%9D%98/" style="font-size: 10px;">#계몽주의</a> <a href="/tags/%EA%B3%A0%EC%A0%84/" style="font-size: 16.67px;">#고전</a> <a href="/tags/%EA%B3%A0%EC%A0%84%EC%A3%BC%EC%9D%98/" style="font-size: 10px;">#고전주의</a> <a href="/tags/%EA%B3%BC%ED%95%99/" style="font-size: 10px;">#과학</a> <a href="/tags/%EA%B8%88%EC%84%9C/" style="font-size: 10px;">#금서</a> <a href="/tags/%EB%82%AD%EB%A7%8C%EC%A3%BC%EC%9D%98/" style="font-size: 10px;">#낭만주의</a> <a href="/tags/%EB%8F%85%EC%9D%BC%EB%AC%B8%ED%95%99/" style="font-size: 10px;">#독일문학</a> <a href="/tags/%EB%94%94%EC%8A%A4%ED%86%A0%ED%94%BC%EC%95%84%EC%86%8C%EC%84%A4/" style="font-size: 10px;">#디스토피아소설</a> <a href="/tags/%EB%AA%B0%EB%9D%BD%EA%B7%80%EC%A1%B1/" style="font-size: 10px;">#몰락귀족</a> <a href="/tags/%EB%B9%85%ED%86%A0%EB%A6%AC%EC%95%84%EC%8B%9C%EB%8C%80/" style="font-size: 10px;">#빅토리아시대</a> <a href="/tags/%EC%82%AC%EB%9E%91/" style="font-size: 10px;">#사랑</a> <a href="/tags/%EC%86%8C%EC%84%A4/" style="font-size: 20px;">#소설</a> <a href="/tags/%EC%8B%A4%EC%A1%B4%EC%A3%BC%EC%9D%98/" style="font-size: 10px;">#실존주의</a> <a href="/tags/%EC%97%AC%EC%84%B1%EB%B3%80%ED%98%B8%EC%82%AC/" style="font-size: 13.33px;">#여성변호사</a> <a href="/tags/%EC%98%81%EA%B5%AD%EB%9F%B0%EB%8D%98%EC%9C%A0%ED%95%99/" style="font-size: 10px;">#영국런던유학</a> <a href="/tags/%EC%9E%90%EA%B8%B0%EA%B3%A0%EB%B0%B1/" style="font-size: 10px;">#자기고백</a> <a href="/tags/%EC%9E%90%EA%B8%B0%ED%83%90%EC%83%89%EC%9D%98%EC%97%AC%EC%A0%95/" style="font-size: 10px;">#자기탐색의여정</a> <a href="/tags/%EC%9E%90%EB%B3%B8%EC%A3%BC%EC%9D%98%EB%B9%84%ED%8C%90/" style="font-size: 10px;">#자본주의비판</a> <a href="/tags/%EC%A1%B0%EC%A7%80%EC%95%84%EC%8B%9C%EB%8C%80/" style="font-size: 10px;">#조지아시대</a> <a href="/tags/%EC%A7%91%EC%B0%A9/" style="font-size: 13.33px;">#집착</a> <a href="/tags/%EC%B2%A0%ED%95%99/" style="font-size: 10px;">#철학</a> <a href="/tags/%ED%86%A8%EC%8A%A4%ED%86%A0%EC%9D%B4%EC%A3%BC%EC%9D%98/" style="font-size: 10px;">#톨스토이주의</a> <a href="/tags/%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90/" style="font-size: 10px;">#한강공원</a> <a href="/tags/%EA%B3%A0%EC%A0%84/" style="font-size: 10px;">고전</a> <a href="/tags/%EB%AC%B8%ED%95%99%EC%9D%B4%EB%A1%A0/" style="font-size: 10px;">문학이론</a> <a href="/tags/%EC%84%9C%EC%82%AC%EA%B8%B0%EB%B2%95/" style="font-size: 10px;">서사기법</a> <a href="/tags/%EC%8B%9C%EC%A0%90/" style="font-size: 10px;">시점</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">아카이브</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">6월 2025</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">최근 포스트</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/06/22/hello-world/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/22/Reading%20Notes/Books/%ED%96%89%EC%84%B1/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/18/Reading%20Notes/Books/%EB%A7%88%EC%9D%8C/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/18/Reading%20Notes/Author/%EB%82%98%EC%93%B0%EB%A9%94%20%EC%86%8C%EC%84%B8%ED%82%A4/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/18/Reading%20Notes/Travel/%EC%84%9C%EC%9A%B8%EA%B5%AD%EC%A0%9C%EB%8F%84%EC%84%9C%EC%A0%84/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 진소현<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+<h2 id="📌추천-읽기-순"><a href="#📌추천-읽기-순" class="headerlink" title="📌추천 읽기 순"></a>📌추천 읽기 순</h2><h2 id="🔗관련-주제"><a href="#🔗관련-주제" class="headerlink" title="🔗관련 주제"></a>🔗관련 주제</h2><h2 id="🗣️-인상-깊은-문장들"><a href="#🗣️-인상-깊은-문장들" class="headerlink" title="🗣️ 인상 깊은 문장들"></a>🗣️ 인상 깊은 문장들</h2><h2 id="🧭-내-독서-기록"><a href="#🧭-내-독서-기록" class="headerlink" title="🧭 내 독서 기록"></a>🧭 내 독서 기록</h2><h2 id="✍️-개인-생각-메모"><a href="#✍️-개인-생각-메모" class="headerlink" title="✍️ 개인 생각 &#x2F; 메모"></a>✍️ 개인 생각 &#x2F; 메모</h2></div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/5/">이전</a></div><div class="pagination-next"><a href="/page/7/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/5/">5</a></li><li><a class="pagination-link is-current" href="/page/6/">6</a></li><li><a class="pagination-link" href="/page/7/">7</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/10/">10</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives/"><p class="title">99</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories/"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags/"><p class="title">30</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="me noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">링크</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%EC%84%9C%EC%88%A0-%EC%8B%9C%EC%A0%90/"><span class="level-start"><span class="level-item">서술 시점</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-06-22T11:11:22.843Z">2025-06-22</time></p><p class="title"><a href="/2025/06/22/hello-world/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-06-22T02:33:11.885Z">2025-06-22</time></p><p class="title"><a href="/2025/06/22/Reading%20Notes/Books/%ED%96%89%EC%84%B1/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-06-18T12:55:51.505Z">2025-06-18</time></p><p class="title"><a href="/2025/06/18/Reading%20Notes/Books/%EB%A7%88%EC%9D%8C/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-06-18T12:53:35.612Z">2025-06-18</time></p><p class="title"><a href="/2025/06/18/Reading%20Notes/Author/%EB%82%98%EC%93%B0%EB%A9%94%20%EC%86%8C%EC%84%B8%ED%82%A4/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-06-18T11:34:30.353Z">2025-06-18</time></p><p class="title"><a href="/2025/06/18/Reading%20Notes/Travel/%EC%84%9C%EC%9A%B8%EA%B5%AD%EC%A0%9C%EB%8F%84%EC%84%9C%EC%A0%84/"> </a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2025/06/"><span class="level-start"><span class="level-item">6월 2025</span></span><span class="level-end"><span class="level-item tag">99</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Kafkaesque/"><span class="tag">#Kafkaesque</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Orwellian/"><span class="tag">#Orwellian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/SF/"><span class="tag">#SF</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%84%EB%AA%BD%EC%A3%BC%EC%9D%98/"><span class="tag">#계몽주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%A0%EC%A0%84/"><span class="tag">#고전</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%A0%EC%A0%84%EC%A3%BC%EC%9D%98/"><span class="tag">#고전주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%BC%ED%95%99/"><span class="tag">#과학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B8%88%EC%84%9C/"><span class="tag">#금서</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%82%AD%EB%A7%8C%EC%A3%BC%EC%9D%98/"><span class="tag">#낭만주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8F%85%EC%9D%BC%EB%AC%B8%ED%95%99/"><span class="tag">#독일문학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%94%94%EC%8A%A4%ED%86%A0%ED%94%BC%EC%95%84%EC%86%8C%EC%84%A4/"><span class="tag">#디스토피아소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AA%B0%EB%9D%BD%EA%B7%80%EC%A1%B1/"><span class="tag">#몰락귀족</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B9%85%ED%86%A0%EB%A6%AC%EC%95%84%EC%8B%9C%EB%8C%80/"><span class="tag">#빅토리아시대</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%82%AC%EB%9E%91/"><span class="tag">#사랑</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%86%8C%EC%84%A4/"><span class="tag">#소설</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8B%A4%EC%A1%B4%EC%A3%BC%EC%9D%98/"><span class="tag">#실존주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%97%AC%EC%84%B1%EB%B3%80%ED%98%B8%EC%82%AC/"><span class="tag">#여성변호사</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%98%81%EA%B5%AD%EB%9F%B0%EB%8D%98%EC%9C%A0%ED%95%99/"><span class="tag">#영국런던유학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EA%B8%B0%EA%B3%A0%EB%B0%B1/"><span class="tag">#자기고백</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EA%B8%B0%ED%83%90%EC%83%89%EC%9D%98%EC%97%AC%EC%A0%95/"><span class="tag">#자기탐색의여정</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EB%B3%B8%EC%A3%BC%EC%9D%98%EB%B9%84%ED%8C%90/"><span class="tag">#자본주의비판</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A1%B0%EC%A7%80%EC%95%84%EC%8B%9C%EB%8C%80/"><span class="tag">#조지아시대</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A7%91%EC%B0%A9/"><span class="tag">#집착</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B2%A0%ED%95%99/"><span class="tag">#철학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%86%A8%EC%8A%A4%ED%86%A0%EC%9D%B4%EC%A3%BC%EC%9D%98/"><span class="tag">#톨스토이주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90/"><span class="tag">#한강공원</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%A0%EC%A0%84/"><span class="tag">고전</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AC%B8%ED%95%99%EC%9D%B4%EB%A1%A0/"><span class="tag">문학이론</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%84%9C%EC%82%AC%EA%B8%B0%EB%B2%95/"><span class="tag">서사기법</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8B%9C%EC%A0%90/"><span class="tag">시점</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">업데이트 소식 받기</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="구독"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="구독"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="오리의 공유서재" height="28"></a><p class="is-size-7"><span>&copy; 2025 진소현</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
