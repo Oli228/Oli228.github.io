@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>카테고리: Bigdata Analytics - Oli Sharing Place</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Oli Sharing Place"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Oli Sharing Place"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Oli Sharing Place"><meta property="og:url" content="https://oli228.github.io/"><meta property="og:site_name" content="Oli Sharing Place"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://oli228.github.io/img/og_image.png"><meta property="article:author" content="진오리"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://oli228.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://Oli228.github.io"},"headline":"Oli Sharing Place","image":["https://oli228.github.io/img/og_image.png"],"author":{"@type":"Person","name":"진오리"},"publisher":{"@type":"Organization","name":"Oli Sharing Place","logo":{"@type":"ImageObject","url":"https://oli228.github.io/img/logo.png"}},"description":""}</script><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Oli Sharing Place" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/map">Book map</a><a class="navbar-item" href="/graph">Graph View</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">카테고리</a></li><li><a href="/categories/Studying/">Studying</a></li><li><a href="/categories/Studying/Certification/">Certification</a></li><li class="is-active"><a href="#" aria-current="page">Bigdata Analytics</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-09-19T01:00:00.000Z" title="2025. 9. 19. 오전 10:00:00">2025-09-19</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.074Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">9분안에 읽기 (약 1355 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/09/19/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/2025.9.6.%20%2011%ED%9A%8C%EC%B0%A8%20%EC%8B%9C%ED%97%98%EA%B2%B0%EA%B3%BC/">11회차 빅데이터분석기사 필기 시험 복기 및 사전점수 결과</a></p><div class="content"><p>제11회 사전점수 발표 결과(9.19.): 평균 65점 합격<br>… (The rest of your content stays exactly the same) …</p>
+<p>제11회 사전점수 발표 결과(9.19.): 평균 65점 합격<br><em>빅데이터 분석기사는 정식 발표 전 사전점수를 발표해줘요…! 덕분에 실기 준비를 바로 할 수 있어요…</em></p>
+<ul>
+<li>1과목 빅데이터분석기획: 18.75&#x2F;25점 &#x3D;&gt; 난이도가 낮아 더 높은 점수 예상했는데 아쉬움</li>
+<li>2과목 빅데이터 탐색: 15&#x2F;25점 &#x3D;&gt; 택일 문제들이 많아서 더 낮은 점수 예상했는데 안도감</li>
+<li>3과목 빅데이터 모델링: 13.75&#x2F;25점  &#x3D;&gt; 예상했던 것처럼 낮은 점수.. 그래도 과락 아닌게 어딘가요</li>
+<li>4과목 빅데이터 결과해석: 17.5&#x2F;25점 &#x3D;&gt; 예상했던 만큼 나온 점수</li>
+</ul>
+<p>필기 시험 직후 기억나는 질문과 답을 복기한 표인데 참고하실 분들은 참고하세요!</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>문제내용</th>
+<th>답내용</th>
+<th>나의답</th>
+<th>예상답</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>O</td>
+<td>데이터사이언티스트 소프트스킬?</td>
+<td>ㄱ,ㄴ,ㄷ,ㄹ</td>
+<td>ㄱ,ㄷ</td>
+<td>ㄱ,ㄷ</td>
+</tr>
+<tr>
+<td>O</td>
+<td>빅데이터플랫폼 옳지 않은 것은?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>crisp-dm 첫 번째 절차?</td>
+<td>1.데이터이해 2. 비즈니스이해 …</td>
+<td>비즈니스 이해</td>
+<td>비즈니스 이해</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>데이터품질</td>
+<td></td>
+<td>일관성</td>
+<td>유효성?</td>
+</tr>
+<tr>
+<td>O</td>
+<td>… 기억 안남</td>
+<td>상향식, 하향식</td>
+<td>상향식, 하향식</td>
+<td>상향식, 하향식</td>
+</tr>
+<tr>
+<td>O</td>
+<td>원-핫 인코딩 옳지 않은 것은?</td>
+<td></td>
+<td>공간활용된다</td>
+<td>공간활용된다</td>
+</tr>
+<tr>
+<td>O</td>
+<td>정성적 평가에 대한 설명은?</td>
+<td>2. 활용 보고서</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>O</td>
+<td>HDFS에 대한 설명으로 옳은것은?</td>
+<td>3. 구글과 같은 오픈소스 사용</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>O</td>
+<td>군집수 설정 불필요한 것은?</td>
+<td>DBSCAN</td>
+<td>DBSCAN</td>
+<td>DBSCAN</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>PCA</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>공분산 구하기</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>조건부 확률</td>
+<td></td>
+<td>94</td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>총계에 대한 설명으로 맞지 않는거?</td>
+<td></td>
+<td>마스킹</td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>교호작용?</td>
+<td>x1+x2, x1*x2 …</td>
+<td>x1*x2</td>
+<td>x1*x2</td>
+</tr>
+<tr>
+<td>O</td>
+<td>과적합 예방하는 방법?</td>
+<td>1. 2. 3. 4. epoch 늘림</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>O</td>
+<td>수박, 사과 신뢰도</td>
+<td>3&#x2F;4</td>
+<td>3&#x2F;4</td>
+<td>3&#x2F;4</td>
+</tr>
+<tr>
+<td>O</td>
+<td>ROC 에 대한 설명으로 옳지 않은것은?</td>
+<td>1. 오류분포 만들 수 있다.</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>O</td>
+<td>시계열 그래프에 대한 설명?</td>
+<td>점 그래프..</td>
+<td>점</td>
+<td>점</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>상자그림</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>연령별 설문조사</td>
+<td>ㄱ. 단순랜덤추출 ㄴ. 계통 ㄷ. 층화..</td>
+<td>ㄴ</td>
+<td>ㄷ</td>
+</tr>
+<tr>
+<td>O</td>
+<td>윈도우 슬라이딩 활용하는 이유?</td>
+<td>시계열 패턴 찾기</td>
+<td>시계열 패턴 찾기</td>
+<td>시계열 패턴 찾기</td>
+</tr>
+<tr>
+<td>O</td>
+<td>노이즈 제거 방법?</td>
+<td>1. 스무딩 2. 정규화…</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>기하급수적 늘어나는 시계열</td>
+<td>1. y축에 OO처리, 2. x축에 OO처리, 3. y축에 로그처리 …</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>O</td>
+<td>분산파일시스템</td>
+<td>1. 데이터 2. 마이크로. ..</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>O</td>
+<td>키 구간추정 90%</td>
+<td></td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>X</td>
+<td>깁스샘플링에 대한 설명으로 옳지 않은 것은?</td>
+<td>1. 초기 수집한 데이터를 버린다</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>로지스틱회귀분석</td>
+<td>1. 왈드 검증 3. AIC</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>O</td>
+<td>불효일충</td>
+<td></td>
+<td>충분성</td>
+<td>충분성</td>
+</tr>
+<tr>
+<td>O</td>
+<td>평균제곱합</td>
+<td>와드연결법</td>
+<td>와드연결법</td>
+<td>와드연결법</td>
+</tr>
+<tr>
+<td>O</td>
+<td>등분산성 없으면?</td>
+<td></td>
+<td>잔차 분산 일정하지 않음</td>
+<td>잔차분산 일정하지 않음</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>전진, 후진, 단계적 제거법, ?</td>
+<td></td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>피어슨계수</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>계층적 군집분석</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>엔트로피, 지니계수 등등</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>Java</td>
+<td>JSON</td>
+<td>JSON</td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>O</td>
+<td>구조화된 데이터</td>
+<td>반정형</td>
+<td>반정형</td>
+<td>반정형</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>상관계수 보존하는</td>
+<td>min-max 람다1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>앙상블</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>변수를 선택해야 하는 이유?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>1000에 1% 근사</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>GLM</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>대소바뀌는 변환?</td>
+<td>3.역수</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>O</td>
+<td></td>
+<td>k-means, hold out, 부트스트랩</td>
+<td>holdout</td>
+<td>holdout</td>
+</tr>
+<tr>
+<td>O</td>
+<td>변동계수&#x2F;표준편차&#x2F;평균</td>
+<td>평균을 표준편차로 나눔</td>
+<td>평균을 표준편차로 나눔</td>
+<td>평균을 표준편차로 나눔</td>
+</tr>
+<tr>
+<td>O</td>
+<td>개인정보보호법에 해당하는 것은?</td>
+<td>1. 은행 2. 정보통신서비스 제공자 …</td>
+<td>2번</td>
+<td>2번</td>
+</tr>
+<tr>
+<td>O</td>
+<td>데이터 훼손 원칙</td>
+<td></td>
+<td>데이터 훼손원칙</td>
+<td>데이터 훼손원칙</td>
+</tr>
+<tr>
+<td>O</td>
+<td>TF-IDF 옳은 것은?</td>
+<td>1)모름 2)유사도가 높은 문서일수록 0에 가까워짐 3) inverse여서 올라감 4) 순위결정불가</td>
+<td>2번</td>
+<td>2번</td>
+</tr>
+<tr>
+<td>O</td>
+<td>추정량 문제 불효일충</td>
+<td>모르겠음</td>
+<td>충분성</td>
+<td>충분성</td>
+</tr>
+<tr>
+<td>O</td>
+<td>히든노드가 있고 순환하는 딥러닝</td>
+<td>1)RNN, 2)CNN …</td>
+<td>RNN</td>
+<td>RNN</td>
+</tr>
+<tr>
+<td>X</td>
+<td>경사하강법</td>
+<td>1)1 N 2) N 1</td>
+<td>배치 1 확률N</td>
+<td>배치 N 확률1</td>
+</tr>
+<tr>
+<td>불확</td>
+<td>상관계수 옳은 것 고르는 문제</td>
+<td>ㄱ. 상관계수 -1이면 ~ +1이면 ~이다<br><br>ㄴ. 상관계수 0 이면 연관이 없다<br><br>ㄷ. 상관계수 0.5넘으면 유의한 양의 ~~</td>
+<td>ㄱ,ㄷ,</td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>비교시각화, 관계시각화</td>
+<td>히트맵, 버블 등…</td>
+<td>버블</td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>F1 Score</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>도핑 5%, …</td>
+<td></td>
+<td>93%</td>
+<td>62%</td>
+</tr>
+<tr>
+<td></td>
+<td>anova, 비모수</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>박스플롯에 대한 설명</td>
+<td></td>
+<td>중앙값의 1.5 넘으면 이상값으로 처리</td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>인포그래픽</td>
+<td>1.?2.?3.인포그래픽 한정 사용</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>X</td>
+<td>왜도 우측으로 쏠렸을 때 해야 하는 변환</td>
+<td>1.로그 2.지수</td>
+<td>지수</td>
+<td>로그</td>
+</tr>
+<tr>
+<td>O</td>
+<td>인공신경망 초매개변수?</td>
+<td>ㄱ. 가중치 ㄴ. 편향, ㄷ:은닉층 내 노드 개수, ㄹ: 은닉층 개수</td>
+<td>ㄷ,ㄹ</td>
+<td>ㄷ,ㄹ</td>
+</tr>
+<tr>
+<td>O</td>
+<td>카이제곱 자유도</td>
+<td></td>
+<td>(r-1)(c-1)</td>
+<td>(r-1)(c-1)</td>
+</tr>
+<tr>
+<td>X</td>
+<td>네스테로프 모멘텀 (Nesterov Momentum)에  대한 설명</td>
+<td></td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>adagrad</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>O</td>
+<td>부스팅에 대한 설명으로 옳지않은것은?</td>
+<td></td>
+<td>4.voting</td>
+<td>4</td>
+</tr>
+<tr>
+<td>X</td>
+<td>SVM</td>
+<td>1.<br><br>2. 변수 하나만 선택<br><br>3. 완전 분리<br><br>4. 직선</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>불확</td>
+<td>Z검정을 하는 경우?</td>
+<td>모분산을 알고 있고 어쩌고 저쩌고</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-15T06:11:40.475Z" title="2025. 8. 15. 오후 3:11:40">2025-08-15</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.079Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">11분안에 읽기 (약 1576 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/15/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EC%A0%9C2%EA%B3%BC%EB%AA%A9/%EC%B1%95%ED%84%B03.%20%ED%86%B5%EA%B3%84%EA%B8%B0%EB%B2%95%EC%9D%98%20%EC%9D%B4%ED%95%B4/%EC%84%B9%EC%85%981.%20%EA%B8%B0%EC%88%A0%ED%86%B5%EA%B3%84/%EC%84%B9%EC%85%981.%20%EA%B8%B0%EC%88%A0%ED%86%B5%EA%B3%84/">Chapter 2. 빅데이터 탐색 _ 통계기법의 이해_ 기술통계</a></p><div class="content"><h1 id="1-개념"><a href="#1-개념" class="headerlink" title="1. 개념"></a>1. 개념</h1><h2 id="1-정의"><a href="#1-정의" class="headerlink" title="1) 정의"></a>1) 정의</h2><ul>
+<li>기술통계: 데이터를 요약하여 묘사하고 설명하는 통계기법</li>
+<li>확률: 통계적 현상의 확실함의 정도</li>
+<li>확률변수(X): 사건의 시행의 결과를 하나의 수치로 대응시킬 때의 값 <ul>
+<li>이산확률변수: 확률변수 값의 수가 유한한 변수 *X&#x3D; {0, 1, 2}</li>
+<li>연속확률변수: 확률변수 값의 수가 무한한 변수 *X&#x3D; 시간, 키, 몸무게 등 셀수 없고 연속적</li>
+</ul>
+</li>
+<li>기댓값(Expected Value): 특정 값을 가질 확률(선형성, 덧셈&#x2F;곱셈법칙 성립)<ul>
+<li>이산확률변수: E(X)&#x3D;∑xf(x) <blockquote>
+<p>주사위 한 번 던져 각 눈의 값 나올 확률 1&#x2F;6 &#x3D;&gt; 기댓값 E(X)&#x3D;(1+2+3+4+5+6)&#x2F;(1&#x2F;6)&#x3D;3.5</p>
+</blockquote>
+</li>
+<li>연속확률변수: E(X)&#x3D;∫xf(x)dx<blockquote>
+<p>구간 [0, 1]에서 연속인 확률변수 X의 확률밀도함수 f(x)&#x3D;1 일 때, X의 기댓값 &#x3D; [1&#x2F;2x^2 ]&#x3D; 1&#x2F;2-0 &#x3D;1&#x2F;2</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>분산(Variance): 확률분포의 산포도를 나타내고 기댓값에서 떨어진 거리의 제곱의 기댓값임<ul>
+<li>이산확률변수의 분산: E(X)&#x3D; ∑xf(x)&#x3D;μ<ul>
+<li><strong>Var</strong>(X)&#x3D;∑(x-μ)^2 f(x)&#x3D;∑x^2f(x) - μ^2 &#x3D; <strong>E(X^2)-{E(X)}^2</strong></li>
+</ul>
+</li>
+<li>연속확률변수의 분산: E(X)&#x3D; ∫xf(x)dx&#x3D;μ<ul>
+<li>Var(X)&#x3D;E(X^2)-{E(X)}^2</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>공분산(Covariance): 두 변수의 함께 변하는 정도</li>
+<li>사건: 동일 상태로 여러 차례 반복하는 실험이나 관측의 결과로 나타나는 것</li>
+<li>표본공간: 통계적 실험에서 모든 발생가능한 실험결과들의 집합</li>
+<li></li>
+</ul>
+<h2 id="2-종류"><a href="#2-종류" class="headerlink" title="2) 종류"></a>2) 종류</h2><ul>
+<li>중심화 경향: 데이터의 물리적 상대적 위치 정리</li>
+<li>분산도 경향: 데이터의 흩어진 정도 </li>
+<li>자료의 분포형태: 데이터의 대칭 상태</li>
+</ul>
+<h2 id="3-표본추출"><a href="#3-표본추출" class="headerlink" title="3) 표본추출"></a>3) 표본추출</h2><ul>
+<li>모집단(Population): 관심대상의 전체집합</li>
+<li>표본(Sample): 모집단 속에서 일부를 조사한 결과</li>
+<li>표본추출 오차(Sampling Bias): 표본의 크기보다는 대표성을 가진 표본 추출이 중요</li>
+</ul>
+<h1 id="2-추출기법"><a href="#2-추출기법" class="headerlink" title="2. 추출기법"></a>2. 추출기법</h1><h2 id="1-확률표본추출-기법"><a href="#1-확률표본추출-기법" class="headerlink" title="1) 확률표본추출 기법"></a>1) 확률표본추출 기법</h2><ul>
+<li>단순무작위 추출</li>
+<li>계통추출: 모집단에서 추출 간격을 설정하여 간격 사이에서 무작위 추출</li>
+<li>층화추출: 모집단을 서로 겹치지 않게 <strong>특성에 따라</strong> 여러 층으로 나눠 분할된 층별로 배정된 표본을 단순 임의 추출법에 따라 추출하는 방법<blockquote>
+<p>예. 모집단 남녀 성비가 3:2면, 표본의 성비도 3:2로 추출</p>
+</blockquote>
+<ul>
+<li>장점: 추정의 정도 높일 수 있음. 각 층별 추정 결과도 얻을 수 있음. </li>
+<li>층화변수란? 추출단위가 어느 층에 속하는지 구분이 되는 기준<ul>
+<li>층화변수가 양적 변수인 경우 층의 최적경계점: n-1개 경계점을 결정하고 추정값의 분산을 최소화하는 경계점 결정</li>
+</ul>
+</li>
+<li>표본배분<ul>
+<li>비례배분법: 층별 추출단위 수에 비례하여 표본크기를 배분(예. 한 지역 유권자 남녀 3:2, 표본 성비도 3:2로 추출)</li>
+<li>네이만배분법: 층별 크기와 층별 변동의 정도를 고려해 변동이 크면 많은 표본 배정</li>
+<li>최적배분법: 추정량의 분산을 최소화시키고 주어진 분산 범위 하에 비용 최소화</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>군집추출: 모집단을 차이가 없는 여러 군집으로 나눠 군집의 단위 일부 또는 전체에 대한 분석</li>
+</ul>
+<h2 id="2-비확률표본추출-기법"><a href="#2-비확률표본추출-기법" class="headerlink" title="2) 비확률표본추출 기법"></a>2) 비확률표본추출 기법</h2><ul>
+<li>간편추출법: 조사원 개인 자의적 판단에 따라 표본 추출 (예. 특정 장소 지나가는 사람 대상 여론조사)</li>
+<li>판단추출법: 조사자 개인 나름의 지식과 경험에 의해 표본 추출(예. 교육연구소 연구원이 학생 성적 대표하는 몇 학교 선택)</li>
+<li>할당추출법: 조사목적과 밀접 관련있는 조사대상자의 연력잉나 성별 등 변수값에 따라 모집단을 부분집단으로 구분하고, 부분집단별 구성 비율과 표본의 부분집단별 구성 비율이 유사하도록 표본 선정</li>
+<li>눈덩이추출법: 접근 어렵고 추출틀 작성이 곤란한 집단은 사람의 소개를 받아 조사</li>
+</ul>
+<h1 id="3-확률분포-Probability-Distriubtion"><a href="#3-확률분포-Probability-Distriubtion" class="headerlink" title="3. 확률분포(Probability Distriubtion)"></a>3. 확률분포(Probability Distriubtion)</h1><h2 id="1-개념-1"><a href="#1-개념-1" class="headerlink" title="1) 개념"></a>1) 개념</h2><h3 id="가-조건부확률"><a href="#가-조건부확률" class="headerlink" title="가. 조건부확률"></a>가. 조건부확률</h3><ul>
+<li>P(A|B): 사건 B가 일어났다는 조건하에서 다른 사건 A가 일어날 확률  <em>베이지안 정리</em></li>
+</ul>
+<h3 id="나-곱셈확률"><a href="#나-곱셈확률" class="headerlink" title="나. 곱셈확률"></a>나. 곱셈확률</h3><ul>
+<li>P(A∩B): 사건 A와 사건 B가 동시에 발생할 확률</li>
+</ul>
+<h3 id="다-총확률-정리"><a href="#다-총확률-정리" class="headerlink" title="다. 총확률 정리"></a>다. 총확률 정리</h3><ul>
+<li>임의의 사건 B의 확률을 k개의 조건부 확률을 이용해서 구하는 것</li>
+</ul>
+<h3 id="라-베이지안-정리"><a href="#라-베이지안-정리" class="headerlink" title="라. 베이지안 정리"></a>라. 베이지안 정리</h3><ul>
+<li>사전에 어떤 사건 A에 대한 사전확률이 부여된 상태에서 어떤 사건 B에 관한 정보가 알려진 후, 그 사건 A에 대한 사후확률<blockquote>
+<p>(문제) 직장남성30% 흡연으로 기관지 이상. 실제 기관지 검사하니 90% 이상하고 이상없는 경우에 이상반응이 나타날 확률 10%. 이 때, 임의의 직장 남성이 기관지 검사 시 이상반응이 나타났지만 실제 이상 없을 확률?<br>(풀이) a1 &#x3D; 기관지 이상이 있을 사건, a2 &#x3D; 기관지 정상일 사건, b&#x3D; 검사결과 이상반응이 나타날 사건<br>p(a1)&#x3D;0.3, p(a2)&#x3D;0.7, p(b|a1)&#x3D;0.9, p(b|a2)&#x3D;0.1<br>p(b|a1) : 기관지에 이상 있고 검사결과 이상, p(b|a2): 기관지 정상이고 검사결과 이상<br>p(b)&#x3D;p(b|a1)p(a1)+p(b|a2)p(a2)<br>p(a2|b)&#x3D; p(b|a2)p(a2)&#x2F;p(b) ….. 어렵군 (다시 풀어봐야지 나중에)</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2-이산확률분포"><a href="#2-이산확률분포" class="headerlink" title="2) 이산확률분포"></a>2) 이산확률분포</h2><h3 id="가-베르누이-분포-결과가-성공-혹은-실패"><a href="#가-베르누이-분포-결과가-성공-혹은-실패" class="headerlink" title="가. 베르누이 분포: 결과가 성공 혹은 실패"></a>가. 베르누이 분포: 결과가 성공 혹은 실패</h3><ul>
+<li>확률질량함수 f(x) &#x3D; p^x q^1-x</li>
+<li>기댓값 E(x) &#x3D; p</li>
+<li>분산 Var(x) &#x3D; pq</li>
+</ul>
+<h3 id="나-이항분포-베르누이-분포를-n번-독립시행-시-성공횟수를-X로-정의한-분포"><a href="#나-이항분포-베르누이-분포를-n번-독립시행-시-성공횟수를-X로-정의한-분포" class="headerlink" title="나. 이항분포: 베르누이 분포를 n번 독립시행 시 성공횟수를 X로 정의한 분포"></a>나. 이항분포: 베르누이 분포를 n번 독립시행 시 성공횟수를 X로 정의한 분포</h3><ul>
+<li>기댓값 &#x3D; np , 분산 &#x3D; npq</li>
+<li>(예) 주사위 던지기</li>
+</ul>
+<h3 id="다-다항분포-여러-값을-가질-수-있는-독립확률변수에-대한-확률분포"><a href="#다-다항분포-여러-값을-가질-수-있는-독립확률변수에-대한-확률분포" class="headerlink" title="다. 다항분포: 여러 값을 가질 수 있는 독립확률변수에 대한 확률분포"></a>다. 다항분포: 여러 값을 가질 수 있는 독립확률변수에 대한 확률분포</h3><ul>
+<li>(예) 활주로별 이착륙</li>
+</ul>
+<h3 id="라-포아송분포-단위-시간-안에-어떤-사건이-몇-번-발생할-것인지-확률분포"><a href="#라-포아송분포-단위-시간-안에-어떤-사건이-몇-번-발생할-것인지-확률분포" class="headerlink" title="라. 포아송분포: 단위 시간 안에 어떤 사건이 몇 번 발생할 것인지 확률분포"></a>라. 포아송분포: 단위 시간 안에 어떤 사건이 몇 번 발생할 것인지 확률분포</h3><ul>
+<li>(예)</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-14T11:24:35.169Z" title="2025. 8. 14. 오후 8:24:35">2025-08-14</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.077Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">몇 초안에 읽기 (약 105 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/14/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/8%ED%9A%8C(2024.4.6.)/">빅데이터분석기사 기출문제 8회(2024.4.6.)</a></p><div class="content"><h2 id="1-문제풀기-20-25-21-10-총점-225점-56-25"><a href="#1-문제풀기-20-25-21-10-총점-225점-56-25" class="headerlink" title="1. 문제풀기(20:25~21:10) 총점:  225점 &#x3D;&gt;56.25"></a>1. 문제풀기(20:25~21:10) 총점:  225점 &#x3D;&gt;56.25</h2><p>1과목: 60점</p>
+<ol>
+<li>3o</li>
+<li>1o</li>
+<li>3x</li>
+<li>4?o</li>
+<li>4o</li>
+<li>4x</li>
+<li>1x</li>
+<li>3x</li>
+<li>1o</li>
+<li>3o</li>
+<li>2o</li>
+<li>3x</li>
+<li>4x</li>
+<li>2o</li>
+<li>4o</li>
+<li>3o</li>
+<li>1o</li>
+<li>3x</li>
+<li>3x</li>
+<li>3o<br>2과목: 60점</li>
+<li>3?o</li>
+<li>2?o</li>
+<li>??x</li>
+<li>3o</li>
+<li>3o</li>
+<li>1?o</li>
+<li>1??x</li>
+<li>3o &#x2F; 0.71-0.67&#x3D;0.04</li>
+<li>2???????x</li>
+<li>4o</li>
+<li>3o</li>
+<li>1?x</li>
+<li>1x</li>
+<li>2x</li>
+<li>2?x?</li>
+<li>1o</li>
+<li>4o</li>
+<li>2o</li>
+<li>2x</li>
+<li>4o<br>3과목: 55점</li>
+<li>1x</li>
+<li>3?o???</li>
+<li>2??o??</li>
+<li>4???x?</li>
+<li>3o</li>
+<li>3o</li>
+<li>1 (아니면 4)x</li>
+<li>4x</li>
+<li>3o</li>
+<li>????x</li>
+<li>3o</li>
+<li>1x</li>
+<li>4?x</li>
+<li>4x</li>
+<li>4?o</li>
+<li>4?x</li>
+<li>2??o</li>
+<li>4o</li>
+<li>2o</li>
+<li>2o<br>4과목: 50점</li>
+<li>4o</li>
+<li>3?o</li>
+<li>4x</li>
+<li>4?o???</li>
+<li>2x</li>
+<li>2x</li>
+<li>2o</li>
+<li>??x?? 3아니면4</li>
+<li>2x</li>
+<li>2o</li>
+<li>1o</li>
+<li>1o</li>
+<li>2x</li>
+<li>2o</li>
+<li>3x</li>
+<li>???x</li>
+<li>1x</li>
+<li>1o</li>
+<li>3x</li>
+<li>2o</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-13T10:27:46.052Z" title="2025. 8. 13. 오후 7:27:46">2025-08-13</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.077Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">몇 초안에 읽기 (약 109 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/13/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/9%ED%9A%8C(2024.%209.%207.)/">빅데이터분석기사 기출문제 9회(2024.9.7.)</a></p><div class="content"><h2 id="1-문제풀기-19-36-20-19-총점-185점-4-46-25-점-불합격"><a href="#1-문제풀기-19-36-20-19-총점-185점-4-46-25-점-불합격" class="headerlink" title="1. 문제풀기(19:36~20:19) 총점: 185점&#x2F;4&#x3D;46.25 점 &#x3D;&gt; 불합격"></a>1. 문제풀기(19:36~20:19) 총점: 185점&#x2F;4&#x3D;46.25 점 &#x3D;&gt; 불합격</h2><p>1과목: 70점</p>
+<ol>
+<li>1 o</li>
+<li>3o</li>
+<li>1o</li>
+<li>4o</li>
+<li>3o</li>
+<li>2o</li>
+<li>4o</li>
+<li>1x</li>
+<li>4o</li>
+<li>4o</li>
+<li>1x</li>
+<li>1o</li>
+<li>1x</li>
+<li>2?x</li>
+<li>4o</li>
+<li>1o</li>
+<li>2x</li>
+<li>1o</li>
+<li>2?o</li>
+<li>1x<br>2과목 &#x3D;&gt; 35점</li>
+<li>3?x</li>
+<li>3?x</li>
+<li>4?x</li>
+<li>2x</li>
+<li>4?x</li>
+<li>4?o</li>
+<li>1 why? (1x1)(1)+(1x2)(1)+(2x3)(1)+(2x4)(1)&#x3D;1+2+6+8&#x3D;17 o</li>
+<li>?? why?(-1&#x2F;4)^2 +(1&#x2F;4)^2 &#x3D; 2&#x2F;16&#x3D; 1&#x2F;8x</li>
+<li>??x</li>
+<li>??x</li>
+<li>1x</li>
+<li>3o</li>
+<li>3o</li>
+<li>4?o</li>
+<li>1?x</li>
+<li>3o</li>
+<li>??x</li>
+<li>??x</li>
+<li>4x</li>
+<li>1o<br>3과목: 50점</li>
+<li>1o</li>
+<li>4o</li>
+<li>3?x</li>
+<li>1x</li>
+<li>1o</li>
+<li>3o</li>
+<li>2??o</li>
+<li>4o</li>
+<li>1x</li>
+<li>3x</li>
+<li>2?o</li>
+<li>??x</li>
+<li>??x</li>
+<li>3x</li>
+<li>3o</li>
+<li>1x</li>
+<li>3o</li>
+<li>4o</li>
+<li>4??x</li>
+<li>3x<br>4과목: 30점</li>
+<li>4?o</li>
+<li>2o</li>
+<li>4o</li>
+<li>2x</li>
+<li>1o</li>
+<li>4?x</li>
+<li>4?x</li>
+<li>1x</li>
+<li>3x</li>
+<li>4x</li>
+<li>1x</li>
+<li>2x</li>
+<li>2x</li>
+<li>3??o</li>
+<li>1x</li>
+<li>??x</li>
+<li>1o</li>
+<li>2x</li>
+<li>3x</li>
+<li>4?x</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-12T13:12:53.898Z" title="2025. 8. 12. 오후 10:12:53">2025-08-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.079Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">5분안에 읽기 (약 798 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/12/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EC%A0%9C3%EA%B3%BC%EB%AA%A9/%EC%B1%95%ED%84%B02.%20%EB%B6%84%EC%84%9D%EA%B8%B0%EB%B2%95%20%EC%A0%81%EC%9A%A9/%EC%84%B9%EC%85%982.%20%EB%B6%84%EC%84%9D%EA%B8%B0%EB%B2%95_%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D/">Chapter 3. 빅데이터 모델링_ 분석기법 적용</a></p><div class="content"><ol>
+<li>개념: 독립변수가 종속변수에 미치는 변수들 간 함수적 관계를 탐색하는 분석</li>
+<li>종류<ol>
+<li>선형회귀분석: 종속변수 y와 한 개 이상의 독립변수 x와의 선형 상관성을 알아내는 기법 <strong>조건: 선형성📈, 잔차 등분산성(분산이 일정), 잔차 정규성(잔차의 기댓값 0, 정규분포), 잔차 독립성(서로 독립적)</strong><ul>
+<li>다중공선성(독립변수 간 강한 상관관계를 가져 분산팽창인수가 10이상인 문제를 가진 것으로,<br>다중 회귀분석 수행 시 3개 이상의 독립변수 간 상관관계로 인한 문제 없어야 함)</li>
+</ul>
+<ul>
+<li>종류<br> 1️⃣ 단순 선형회귀분석: y&#x3D;ax+b<br> 2️⃣ 다중 선형회귀분석: y&#x3D; ax1+ bx2+ … +c<br> 3️⃣ 일반화 선형모형(Generalized Linear Model, GLM): 종속변수가 정규분포를 따르지 않아도 적용 가능한 통계 모형<ul>
+<li>주요 구성 요소: 선형 예측 변수, 연결 함수, 확률 분포</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p>예상문제</p>
+<ol>
+<li><p>2o</p>
+</li>
+<li><p>3x (범주형분석)<br>     * 틀린 이유: 로지스틱 회귀분석에 대해 헷갈렸음<br>     - 로지스틱 회귀분석: 두 개의 범주형 변수에서 성공과 실패를 분류할 때 사용<br>     - 두 범주형 변수가 서로 상관있는지, 독립인지 확인하는 것은 <strong>카이제곱</strong><br>     - (나의 오답) t-검정: 독립변수가 범주형, 종변이 연속형 &#x3D;&gt; 두 집단간 평균 비교</p>
+</li>
+<li><p>4o</p>
+</li>
+<li><p>4x<br>     *틀린이유: 로지스틱 회귀분석에 대해 헷갈렸음<br>     - 로지스틱 회귀분석: 분석대상들이 두 집단으로 나뉘고 개별 관측치들이 어느 집단으로 분류될 수 있는 지 분석할 때 사용됨<br>     - (나의 오답) 다변량분산분석은 일변량 분산분석의 확장된 형태 맞음. </p>
+</li>
+<li><p>2x<br>     *틀린이유: 잘 몰랐음<br>     - 시계열이 시차값 사이에 선형관계를 보이는 성질을 자기 상관성이라고 함<br>     - (나의 오답) 계절성분</p>
+</li>
+<li><p>3o</p>
+</li>
+<li><p>4o</p>
+</li>
+<li><p>1x<br>     *틀린이유: 독립적 !&#x3D; 배반적은 다른 개념임<br>     - (나의 오답) 분류기를 만들 수 있는 간단한 기술로 단일 알고리즘을 통한 훈련이 아닌 일반적인 원칙에 근거한 여러 알고리즘들을 이용하여 훈련 &#x3D;&gt; 앙상블기법을 의미하는 줄 알았음. </p>
+</li>
+<li><p>1o</p>
+</li>
+<li><p>1x<br>    *틀린이유: 잘 모르는 개념이었음<br>    - (나의 오답) 가우시안 나이브 베이즈는 각 클래스의 연속값 벡터 X(x1, x2, … xn)들이 가우시안 분포를 따른다고 가정</p>
+</li>
+<li><p>3o</p>
+</li>
+<li><p>3o</p>
+</li>
+<li><p>2o</p>
+</li>
+<li><p>1o</p>
+</li>
+<li><p>3x<br>    *틀린이유: 오피니언 마이닝이 객관적 정보를 주관적 정보로 바꾸는 것으로 착각함<br>     - (나의 오답) 오피니언 마이닝 &#x3D; 주관적 의견을 통계&#x2F;수치화하여 객관적 정보로 바꾸는 기술<br>     - 그게 아니라 버츄얼 마이닝의 설명이 … 리얼리티 마이닝(gps&#x2F;wifi 등의 위치 데이터 등을 사용자 행동 모델링하는 것)</p>
+</li>
+<li><p>2o</p>
+</li>
+<li><p>3o</p>
+</li>
+<li><p>3o</p>
+</li>
+<li><p>4o</p>
+</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-12T13:09:21.316Z" title="2025. 8. 12. 오후 10:09:21">2025-08-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.078Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">9분안에 읽기 (약 1354 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/12/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EC%A0%9C2%EA%B3%BC%EB%AA%A9/%EC%B1%95%ED%84%B02.%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%83%90%EC%83%89/%EC%84%B9%EC%85%981.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%83%90%EC%83%89%EC%9D%98%20%EA%B8%B0%EC%B4%88/">Chapter 2. 빅데이터 탐색 _데이터 탐색_ 데이터탐색의 기초</a></p><div class="content"><ol>
+<li><p>데이터 탐색의 개요</p>
+<ol>
+<li>탐색적 데이터 분석(Exploratory Data Analysis, EDA)<br> 가. 이상치 검출 방법<br> - 개별 데이터 관찰<br> - 통계값 활용<br>     - 데이터 중심: 평균(mean), 중앙값(median), 최빈값(mode)<br>     - 데이터 분산도: 범위(range), 분산(variance)<br>     - IQR(Inter Quartile Range): 전체 데이터를 오름차순 정렬하고 4등분<br>         - 최대값: 전체 75% 지점 : 3사분위 수 + 1.5IQR<br>         - 최소값: 25% 지점: 1사분위수 - 1.5IQR<br>         - 최대값보다 크고, 최소값보다 작으면 이상치로 간주(터키펜스)<br>     - 정규분포: 평균을 중ㅅ미으로 좌우대칭인 종모양을 이루는 분포로 변경하여 어느 정도의 값이 이상치인지 직접 판단<br> - 시각화 활용<br> - 머신러닝 기법: K-means를 통해 이상치 확인</li>
+</ol>
+</li>
+<li><p>상관관계분석</p>
+<ol>
+<li>변수 간의 상관성 분석: 단순상관분석, 다중상관분석(편상관관계분석: 다중상관분석에서 다른 변수와의 관계를 고정하고 두 변수의 관계강도를 측정)</li>
+<li>상관분석의 기본가정:<br> 가. 선형성: x, y 관계가 직선인지 알아보는 것으로 산점도(분포 나타내는 그래프)로 확인<br> 나. 등분산성(동변량성, homoscedasticity): x값과 관계없이 y의 흩어진 정도가 같은 것(&lt;-&gt; 이분산성(heteroscedasticity)<br> 다. 정규분포성: 두 변인의 측정지 분포가 모집단에서 모두 정규분포를 이루는 것<br> 라. 무선독립표본: 모집단에서 표본을 뽑을 때 표본 대상이 확률적으로 선정된다는 것</li>
+<li>상관분석 방법<br> 가. 피어슨 상관계수: 두 변수 x, y간 선형 상관관계를 계량화한 수치(-1 ~ +1)<br> 나. 스피어만 상관계수: 두 변수 x,y간 연관관계가 있는지 없는지 밝혀주며 자료에 이상점이 있거나 표본크기가 작을 때 유용함. (특히 데이터가 서열자료일 때)</li>
+</ol>
+</li>
+<li><p>기초통계량의 추출 및 이해</p>
+<ol>
+<li><p>중심화 경향 기초통계량</p>
+<ul>
+<li>산술평균(Arithmetic Mean): 모든 자료 합하여 전체 자료 수로 나눔 <ul>
+<li>모평균(Population Mean): 모집단 전체 자료의 산술 평균</li>
+<li>표본평균(Sample Mean): 모집단의 부분집합인 추출된 표본 전체의 산술평균</li>
+</ul>
+</li>
+<li>기하평균(Geometric mean): n개의 자료에 대해 관측치를 곱하고 n제곱근</li>
+<li>조화평균(Harmonic mean): 각 요소의 역수의 산술평균을 구한 후 다시 역수를 취함</li>
+</ul>
+<ul>
+<li>자료가 서로 다를 경우 조화평균 &lt; 기하평균 &lt; 산술평균의 부등신 관계를 가짐</li>
+</ul>
+<ul>
+<li>중앙값(Median): 자료 크기 순으로 나열할 때 가운데 값</li>
+<li>최빈값(Mode): 가장 노출 빈도가 높은 자료</li>
+<li>분위수(Quantile): 자료의 위치를 표현하는 수치<ul>
+<li>자료를 4등분 하면 사분위수(quartile), 5등분하면 오분위수(quintile) …..</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>산포도(분산도, degree dispersion): 중심 경향도 수치에서 자료가 얼마나 떨어졌는지 측정하는 척도</p>
+<ul>
+<li>분산(variance): 평균을 중심으로 밀집되거나 퍼짐 정도를 나타내는 척도</li>
+<li>표준편차(standard deviation): 분산의 제곱근</li>
+<li>범위(range): 데이터 간 최댓값과 최솟값의 차이</li>
+<li>평균절대편차(평균편차, 절대편차, Mean Absolute Deviation): 각 자료값과 표본평균과의 편차의 절대값에 대한 산술평균 &#x3D;&gt; 절댓값을 사용하므로 수리적으로 다루기 부적절해 분산을 더 선호</li>
+<li>사분위범위(Inter Quartile Range): 최댓값(Q3+1.5xIQR) 초과하고 최솟값(Q1-1.5xIQR) 미만이면 이상치로 간주 IQR &#x3D; Q3-Q1</li>
+<li>변동계수(Coefficient of Variance, CV): 평균을 중심으로 한 상대적인 산포의 척도로<br>표준편차 &#x2F; 평균으로 계산하고 값이 클수록 변동이 더 크다고 해석</li>
+</ul>
+</li>
+<li><p>자료의 분포형태</p>
+<ul>
+<li>왜도(Skewness): 왼쪽으로 치우치면 양수, 오른쪽으로 치우치면 음수<ul>
+<li>피어슨의 비대칭계수는 3을 곱해 좀 더 비대칭을 강조</li>
+</ul>
+</li>
+<li>첨도(Kurtosis): 분포의 뾰족한 정도를 나타내는 통계적 척도<br>  1️⃣ 첨도는 음수가 될 수 없음. 2️⃣  단위가 없음 3️⃣ 초과첨도는 첨도에서 3을 뺀 값으로 일반 첨도를 정규분포에 맞춰 조정한 개념이므로 초과 첨도는 0이 될 수 있음</li>
+</ul>
+</li>
+<li><h2 id="시각적-데이터-탐색-도수분포표-히스토그램-가로축을-반드시-수량을-표시하는-자료분포를-나타내는-그래프-막대그래프-각-자료값에-대한-도수를-그림으로-표현-가로축이-반드시-수량일-필요-없음-파이차트-산점도-직교-좌표계를-이용해-두-변수-간-관계를-나타냄-줄기-잎-그림-예-10자리는-줄기-1자리는-잎-등으로-표현-상자수염-그림-Box-Plot-최솟값-Q1-Q2-Q3-최댓값을-그리는-것-IQR-Q3-Q1"><a href="#시각적-데이터-탐색-도수분포표-히스토그램-가로축을-반드시-수량을-표시하는-자료분포를-나타내는-그래프-막대그래프-각-자료값에-대한-도수를-그림으로-표현-가로축이-반드시-수량일-필요-없음-파이차트-산점도-직교-좌표계를-이용해-두-변수-간-관계를-나타냄-줄기-잎-그림-예-10자리는-줄기-1자리는-잎-등으로-표현-상자수염-그림-Box-Plot-최솟값-Q1-Q2-Q3-최댓값을-그리는-것-IQR-Q3-Q1" class="headerlink" title="시각적 데이터 탐색 - 도수분포표 - 히스토그램: 가로축을 반드시 수량을 표시하는 자료분포를 나타내는 그래프 - 막대그래프: 각 자료값에 대한 도수를 그림으로 표현(가로축이 반드시 수량일 필요 없음) - 파이차트 - 산점도: 직교 좌표계를 이용해 두 변수 간 관계를 나타냄 - 줄기-잎 그림: (예. 10자리는 줄기, 1자리는 잎 등으로 표현) - 상자수염 그림(Box Plot): 최솟값, Q1, Q2, Q3, 최댓값을 그리는 것. IQR &#x3D; Q3- Q1"></a>시각적 데이터 탐색<br> - 도수분포표<br> - 히스토그램: 가로축을 반드시 수량을 표시하는 자료분포를 나타내는 그래프<br> - 막대그래프: 각 자료값에 대한 도수를 그림으로 표현(가로축이 반드시 수량일 필요 없음)<br> - 파이차트<br> - 산점도: 직교 좌표계를 이용해 두 변수 간 관계를 나타냄<br> - 줄기-잎 그림: (예. 10자리는 줄기, 1자리는 잎 등으로 표현)<br> - 상자수염 그림(Box Plot): 최솟값, Q1, Q2, Q3, 최댓값을 그리는 것. IQR &#x3D; Q3- Q1</h2></li>
+</ol>
+</li>
+</ol>
+<h2 id="관련문제"><a href="#관련문제" class="headerlink" title="관련문제"></a>관련문제</h2><ol>
+<li>상관계수의 특징에 대해 옳지 않은 것은?<ol>
+<li>피어슨은 이상치에 강함</li>
+<li>스피어만은 순위를 기준으로 계산</li>
+<li>피어슨은 선형관계의 강도와 방향을 측정</li>
+<li>상관계수는 -1에서 1사이 값을 가짐</li>
+</ol>
+</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-12T11:59:57.782Z" title="2025. 8. 12. 오후 8:59:57">2025-08-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.078Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">18분안에 읽기 (약 2729 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/12/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EC%A0%9C2%EA%B3%BC%EB%AA%A9/%EC%B1%95%ED%84%B01.%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC/%EC%84%B9%EC%85%982.%20%EB%B6%84%EC%84%9D%EB%B3%80%EC%88%98%20%EC%B2%98%EB%A6%AC/">Chapter 2. 빅데이터 탐색 _분석 변수 처리_</a></p><div class="content"><ol>
+<li><p>변수선택방법: 전진선택법, 후진선택법, 단계적 선택법</p>
+<ol>
+<li><p>전진선택법: 영 모형에서 시작, 종속변수와 상관계수 높은 독립변수를 분석모형에 포함</p>
+<ul>
+<li>부분 F검정을 통해 유의성 검증 시행하여, 유의한 경우 가장 큰 F통계량 가진 모형 선택<br> ** 한 번 추가된 변수는 제거하지 않음</li>
+</ul>
+</li>
+<li><p>후진선택법: 전체 모형에서 시작, 종속변수와 상관계수가 가장 낮은 독립변수를 모형에서 제외</p>
+<ul>
+<li>부분 F검정을 통해 유의성 검증 시행하여, 유의하지 않은 경우 변수 제거, 유의하면 중단<br> ** 한 번 제거된 변수는 추가하지 않음</li>
+</ul>
+</li>
+<li><p>단계적선택법: 전진선택법과 후진선택법의 보완방법</p>
+<ul>
+<li>전진선택법으로 가장 유의한 변수를 모형에 포함 후 나머지 변수들에 대해 후진선택법으로 유의하지 않은 변수들을 제거함</li>
+<li>제거된 변수는 다시 모형에 포함하지 않으며 유의한 설명변수가 존재하지 않을 때까지 과정 반복</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>차원축소 **차원이란? 분석하는 데이터의 종류의 수</p>
+<ol>
+<li><p>차원축소의 필요성<br> 가. 동일 품질을 나타낼 수 있으면 효율성 측면에서 데이터 종류의 수를 줄여야 함<br> 나. 과적합 방지: 과적합은 분석모형의 정확도(신뢰도) 저하<br> 다. 해석력 확보: 차원이 간단할수록 이해가 용이하고 해석이 쉽고 명확함<br> 라. 차원의 저주: 차원이 증가하면 학습데이터의 수가 차원의 수보다 적어져 성능이 저하됨.</p>
+</li>
+<li><p>차원축소의 방법<br> 가. 요인분석(Factor Analysis): 다수의 변수들 간의 관계를 분석하여 공통차원을 축약하는 통계분석<br> - 목적:<br>     - (변수축소) 다수의 변수들의 정보손실 억제하면서 소수의 요인으로 축약<br>     - (변수제거) 요인에 대한 중요도 파악<br>     - (변수특성 파악) 관련변수들이 묶임으로써 요인 간 상호독립성 파악 용이<br>     - (타당성평가) 묶이지 않은 변수의 독립성 여부 판단<br>     - (파생변수) 요인점수를 이용한 새로운 변수를 생성<br> - 특징: <strong>독립변수, 종속분수 개념 없음</strong><br> - 종류: 주성분 분석, 공통요인분석, 특이값 분해 행렬, 음수미포함 행렬분해 등<br> 나. 주성분분석(Principal Component Analysis): 분포된 데이터들의 특성을 설명할 수 있는 하나 또는 복수 개의 특징을 찾는 것 ( <strong>데이터 하나하나에 대한 성분분석이 아니라</strong>, 여러 데이터들이 모여 하나의 분포를 이룰 때 이 분포의 주성분을 분석하는 방법)<br> - 서로 연관성 있는 고차원공간의 데이터를 선형연관성 없는 저차원(주성분)으로 변환<br> - 기존의 기본변수들을 새로운 변수의 세트로 변환하여 차원을 줄이되 기존변수들의 분포특성을 최대한 보존하여 이를 통한 분석결과의 신뢰성을 확보<br> - 특징<br>     - 차원 축소에 폭 넓게 쓰임(사전적 분포 가정의 요구 없음)<br>     - 가장 큰 분산의 방향들이 주요 중심 관심으로 가정<br>     - 선형결합으로만 고려<br>     - 차원 축소는 본래 변수가 서로 상관이 되어야 가능<br> 다. 특이값 분해(Singular Value Decomposition, SVD): 데이터 공간을 나타내는 m x n 크기의 행렬 M에 대해 다음과 같이 분해 가능<br>     <strong>M &#x3D; U∑V^t</strong><br>     - M: mxn 크기의 직교행렬(Orthogonal Matrix: 행렬의 열벡터가 독립인 행렬)<br>     - U: mxm 크기의 직교행렬<br>     - ∑: mxn 크기의 직교행렬<br>     - V^t : nxn크기의 직교행렬<br> &#x3D;&gt; 행렬 M을 여러 개의 행렬 M과 동일한 크기를 갖는 행렬로 분해할 수 있으며 각 행렬의 원소값의 크기는 대각행렬의 대각성분의 크기에 의해 결정(대각행렬: 대각성분을 제외한 나머지 행렬의 원소값이 0)<br> <strong>LSA(Latest Semantic Analysis): 특이값 분해를 활용하여 문서-단어 행렬을 차원 축소하고 잠재의미(의미적 유사성)를 추출하는 기법</strong><br> 라. 음수 미포함 행렬분해(NMF): 음수를 포함하지 않는 행렬을 음수를 포함하지 않는 두 행렬의 곱으로 분해하는 알고리즘</p>
+</li>
+</ol>
+</li>
+<li><p>파생변수의 생성</p>
+<ol>
+<li>개념: 기존 변수를 조합하여 새로운 변수를 만드는 것 (주관적 변수 개념)<ul>
+<li>전 데이터 구간에 대표성을 가지는 변수를 파생변수로 해야 함 *<br>  ** 요약변수: 수집된 정보를 분석에 맞게 종합(aggregate)한 변수 &#x3D;&gt; 데이터마트의 가장 기본적인 변수 (단순 종합 개념)</li>
+</ul>
+</li>
+<li>생성방법<br> 가. 한 값으로부터 특징 추출<br> 나. 한 레코드 내의 값들을 결합<br> 다. 다른 테이블의 부가정보 결합<br> 라. 다수의 필드 내 시간 종속적 데이터 선택<br> 마. 레코드 또는 중요 필드 요약</li>
+<li>교호작용을 포함한 파생변수 생성: 두 개 이상의 독립변수가 함께 작용해 종속변수에 영향 미치는 경우</li>
+</ol>
+</li>
+<li><p>변수 변환</p>
+<ol>
+<li><p>개념: 데이터를 분석하기 좋은 형태로 바꾸는 작업</p>
+</li>
+<li><p>방법<br> 1️⃣ 범주형 변환: 연속적 데이터를 범주형 데이터로 범주 나누어 상대비교하는 방법 효과적일 수 있음(예. 소득이라는 연속적 데이터 -&gt; 소득구간 범위로 구분)<br> 2️⃣ 정규화: 수치로 된 값들을 여러 개 사용할 때 각 수치의 범위가 다르면 이를 같은 범위로 변환(예. 과목 A 시험은 10점 만점, B는 50점 만점이면 개인별 받은 점수에서 각 만점점수를 나눠 정규화함)<br> - 최소-최대 정규화: 모든 특징을 최소값 0, 최대값 1로, 그리고 다른 값들은 0~1 값으로 변환 (단점: 이상치 영향 많이 받음)<br> - z-score 정규화: Z &#x3D; (X-평균)&#x2F;표준편차 (이상치는 잘 처리하지만, 정확히 동일척도로 정규화된 데이터를 생성하지 않음)<br> 3️⃣ 로그 변환: 로그를 취하면 그 분포가 정규 분포에 가깝게 분포하는 경우가 있음<br> - 로그변환분포를 사용하는 전형적 데이터: 국가별 수출액, 사람의 통증 정도 수치화<br> - 데이터 분포의 형태가 좌측으로 치우친 경우<br> 4️⃣ 역수 변환: 역수를 취하면 오히려 선형적인 특성을 갖게 되는 경우가 있음<br> - 데이터 분포의 형태가 좌측으로 치우친 경우<br> 5️⃣ 지수 변환: 지수를 취하면 오히려 선형적인 특성을 갖게 되는 경우가 있음<br> - 데이터 분포의 형태가 우측으로 치우친 경우<br> 6️⃣ 제곱근 변환: 제곱근을 취하면 오히려 선형적인 특성을 갖게 되는 경우가 있음<br> - 데이터 분포의 형태가 좌측으로 약간 치우친 경우<br> 7️⃣ Box-Cox: 양수데이터가 비대칭 분포를 가질 때 사용, 계수가 0이 아니면 멱변환*, 0이면 로그변환<br> * 멱변환: 데이터를 어떤 지수의 거듭제곱으로 변환하는 것</p>
+</li>
+<li><p>분포형태별 정규분포로의 변환 (분포형태 시각화 하는 방법: 샤피로 테스트, Q-Q 플롯)<br> 1️⃣ 우로 치우침(Negative Skew, Left-Skewed): X^3<br> 2️⃣ 우로 약간 치우침(Negative Skew, Left-Skewed): X^2<br> 3️⃣ 좌로 약간 치우침(Positive Skew, Right-Skewed): Square(X)<br> 4️⃣ 좌로 치우침(Positive Skew, Right-Skewed): ln(X)<br> 5️⃣ 극단적 좌로 치우침(Positive Skew, Right-Skewed): 1&#x2F;X</p>
+</li>
+</ol>
+</li>
+<li><p>불균형 데이터 처리: 데이터 양의 차이가 큰 경우 클래스 불균형이라고 함</p>
+<ol>
+<li>문제점: 특정 범주에서 정확도가 높아지면 모형의 성능 판별 어려움<br>즉, 정확도가 높아도 데이터 개수가 적은 클래스의 재현율(recall-rate)는 급격히 작아짐</li>
+<li>불균형 데이터의 처리 방법<br> 1️⃣ 가중치 균형법: 데이터에서 손실 계산 시, 특정 클래스의 데이터에 더 큰 손실값을 갖게 하는 방법<br> 2️⃣ 언더샘플링과 오버샘플링<br> - 언더샘플링: 대표클래스의 일부 대표만 선택, 소수클래스는 최대한 많은 데이터 선택<br> - 오버샘플링: 소수클래스의 복사본을 만들어 대표클래스 수 만큼 만드는 것</li>
+</ol>
+</li>
+<li><p>인코딩: 범주형 데이터를 수치형 데이터로 변환하여 머신러닝 모델에 적용 가능하게 하는 기법</p>
+<ol>
+<li>레이블 인코딩: 각 범주에서 순차적인 정수 레이블을 할당하여 데이터를 변환 (옷 사이즈 )</li>
+<li>원-핫 인코딩: 각 범주에 대해 해당하는 인덱스만 1이고 나머지는 0인 이진 벡터로 변환함</li>
+<li>타깃 인코딩: 주로 분류에서 사용되며 각 범주에 대한 종속변수(타깃)의 평균값을 인코딩으로 사용<ul>
+<li>목적: 범주형 변수의 각 범주가 종속변수와 어떤 관계를 갖는지 수치화하고 모델이 학습함</li>
+<li>수행단계<ul>
+<li>범주형 변수의 각 범주에 대해 종속 변수의 평균값을 계산</li>
+<li>계산된 평균 값을 해당 범주에 대한 인코딩 값으로 대체</li>
+</ul>
+</li>
+<li>주의사항: 과적합 가능성이 있고, 훈련 데이터에만 적용되어야 함. 범주 수가 적거나 데이터가 적으면 적절하지 않을 수 있음</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="예상문제-풀기"><a href="#예상문제-풀기" class="headerlink" title="예상문제 풀기"></a>예상문제 풀기</h2><ol>
+<li>3 x<br>-전진선택법은 한 번 추가된 변수는 제거하지 않는 것이 원칙 ⛔️</li>
+<li>4 o</li>
+<li>3 o</li>
+<li>3 x<br>-PCA는 어떠한 분포 가정도 없고 변수들이 서로 상관있을 때 차원축소 가능</li>
+<li>1 o</li>
+<li>3 o</li>
+<li>4 x<br>-파생변수는 보편적이고 전 데이터구간에 대표성을 가지는 변수여야 하지만,<br>-요약변수는 그렇지만도 않으며 많은 분석 모델에서 공통으로 사용될 수 있어 재활용성이 높다가 더 적합함</li>
+<li>4 x<br>-로그변환에서 취하는 로그는 밑수가 10인 상용로그가 아니며 어떤 수치 값을 그대로 사용하지 않고 로그를 취함</li>
+<li>4 x<br>-잘못선택!</li>
+<li>4 o</li>
+<li>1 o</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-12T11:03:20.775Z" title="2025. 8. 12. 오후 8:03:20">2025-08-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.078Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">10분안에 읽기 (약 1516 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/12/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EC%A0%9C2%EA%B3%BC%EB%AA%A9/%EC%B1%95%ED%84%B01.%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC/%EC%84%B9%EC%85%981.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%95%EC%A0%9C/">Chapter 2. 빅데이터 탐색 _데이터 전처리_ 데이터정제</a></p><div class="content"><ol>
+<li>데이터의 정제<br> 가. 개념: 수집된 데이터를 대상으로 분석에 필요한 데이터를 추출하고 통합하는 과정<br> 나. 필요성: 정제를 거치지 않으면 일관성이 부족해 분석도구 적용 어려우며 분석이 왜곡되거나 신뢰도 저하<br> 다. 정제의 과정: 수집-변환-교정-통합</li>
+<li>데이터 결측값<br> 가. 처리<br> - 임의로 제거 시: 분석에 필요한 유의수준 데이터 수집에 실패할 가능성 발생<br> - 임의로 대체 시: 데이터 편향 발생하여 분석 결과의 신뢰성 저하 가능성 발생<br> 나. 종류<br> - 완전 무작위 결측: 결측 데이터가 관측된&#x2F;관측되지 않은 모든 다른 변수와 아무 연관 없음<br> - 무작위 결측: 결측 데이터가 관측된 다른 변수와 연관은 있으나 그 자체가 비관측값들과는 연관없음<br> - 비 무작위 결측: 결측 데이터가 완전 무작위 결측이나 무작위 결측이 아닌 결측데이터로 정의하는 즉, 결측변수값이 결측여부와 관련 있는 경우<br> 다. 결측값 유형의 분석 및 대치<br> - 단순 대치법<br>     - 완전 분석: 불완전 자료는 완전무시하고 분석(분석은 용이, 단 추론의 타당성에 문제 발생)<br>     - 평균 대치법: 데이터의 평균으로 결측치를 대치(효율성 향상, 단 통계량의 표준오차 과소추정)<br>     - 회귀 대치법: 회귀분석에 의한 예측치로 결측치 대치(데이터의 변동성 반영, 단 회귀모델의 정확도에 따라 값의 정확도 변화하고 독립변수와 종속변수 간 관계가 약한 경우 예측값의 신뢰성이 떨어짐)<br>     - 단순확률 대치법: 확률추출에 의해 전체 데이터에서 무작위 추출(평균대치법의 과소추정 보완)<br>     - 최근접 대치법: 전체표본을 몇 개의 대체군으로 분류하여 각 층에서의 응답자료를 순서대로 정리한 후 결측값 바로 이전의 응답을 결측치로 대치<br> - 다중 대치법: 단수 대치법을 N번 시행하여 효율성 및 일치성 문제 보완<br>     - 1단계 대치단계: 복수의 대치에 의한 결측을 대치한 데이터를 생성<br>     - 2단계 분석단계; 복수 개의 데이터셋에 대한 분석<br>     - 3단계 결합단계: 복수 개의 분석결과에 대한 통계적 결합</li>
+<li>데이터 이상값 처리<br> 가. 이상값: 정상범주에서 벗어난 값<br> 나. 이상치 탐지<br> 1️⃣ 시각화를 통한 방법(비모수적, 단변량(2변량)의 경우)<br>     - 상자 수염 그림(Box Plot): 데이터 분포를 시각화하여 여러 집단을 한 공간에 쉽게 나타냄. 데이터의 최솟값, 최댓값, 중앙값, 1사분위수(Q1), 3사분위수(Q3)등을 고려해야 함<br>         - 1사분위 수: 데이터 정렬했을 때 25%에 위치한 수<br>         - 3사분위 수: 75%에 위치한 수<br>         - <strong>IQR &#x3D; 3사분위 수 - 1사분위 수: 데이터의 중간 50%가 퍼져있는 범위를 나타내는 산포(흩어짐)의 척도</strong><br>         - 최댓값: 3사분위수 + (1.5 IQR), 최솟값: 1사분위 수 - (1.5 IQR)<br>     - 줄기-잎 그림: 주로 작은 데이터 셋에 적합하며 숫자의 일부인 줄기와 그 줄기에 해당하는 값들의 리스트인 잎으로 분리하여 나타냄<br>     - 산점도 그림(Scatter Plot): 두 변수로 이루어진 데이터를 2차원 평면 상에 점으로 시각화.<br> 2️⃣ z-score를 이용한 이상치 탐지 방법<br>     * z-score: 데이터 포인트가 평균으로부터 얼마나 떨어져 있는지를 표준편차의 단위로 나타내는 통계적 지표<br>     - 데이터 정규화하여 표준정규분포(평균0, 표준편차1)로 변환함<br>     - 정규화된 데이터 포인트의 z-score를 계산<br>     - z-score의 절대값이 일정한 임계값보다 큰 데이터는 이상치로 간주(예.전체의 68.27%)<br> 3️⃣ 밀도기반 클러스터링 방법(DBSCAN)<br>     - 비모수적 다변량일 때 군집간 밀도를 이용하여 특정 거리 내 데이터 수가 지정 개수 이상이면 군집으로 정의 &#x3D;&gt; 정의된 군집에서 먼거리에 있는 데이터는 이상치로 간주<br> 4️⃣ 고립 의사나무 방법(Isolation Forest)<br>     - 데이터가 다른 데이터들과 얼마나 분리되어 있는지를 측정하여 이상치를 탐지</li>
+</ol>
+<h2 id="예상문제-풀기"><a href="#예상문제-풀기" class="headerlink" title="예상문제 풀기"></a>예상문제 풀기</h2><ol>
+<li>4 o</li>
+<li>1 x<br> 가. 질적자료는 정성적 또는 범주형 자료라고도 하며, 명목자료와 서열자료로 구분됨.<br> - 명목자료는 측정대상이 범주에 대해 구분되는 것을 수치, 기호로 분류하는 자료(국번, 지역번호)<br> - 서열자료는 명목자료와 비슷하나 수치나 기호가 서열을 나타내는 자료(1위, 2위 .. 등0<ul>
+<li>2번 오답인 이유는. 서열자료는 <strong>정성적</strong> 자료이지, 정량적 자료가 아님</li>
+</ul>
+</li>
+<li>2 o</li>
+<li>3 o</li>
+<li>2 o</li>
+<li>2 x<br> 가. 데이터정제과정: 수집, 저장, 변환, 품질확인, 관리 &#x3D;&gt; 글을 끝까지 읽어보기!</li>
+<li>3 o</li>
+<li>2 o</li>
+<li>4 x<br> 가. 데이터 누락 &#x3D;&gt; 완전무작위 결측<br> 나. 여성은 체중 공개를 꺼림&#x3D;&gt; 무작위 결측<br> 다. 젊은 여성은 체중 공개를 꺼림&#x3D;&gt; 무작위 결측<br> 라. 무거운 사람은 체중공개를 꺼림&#x3D;&gt; Z가 누락될 가능성이 Z값 자체에 관찰되지 않는 값에 달려있음 &#x3D;&gt; 비무작위 결측(NMAR)</li>
+<li>3 o</li>
+<li>4 x<br>- 완전 무작위 결측: 결측 데이터가 관측된&#x2F;관측되지 않은 모든 다른 변수와 아무 연관 없음 &#x3D;&gt; <strong>대규모데이터</strong>에서 단순 무작위 표본 추출을 통해 처리 가능함</li>
+<li>1 o</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-12T10:11:45.570Z" title="2025. 8. 12. 오후 7:11:45">2025-08-12</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.075Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">4분안에 읽기 (약 661 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/12/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/10%ED%9A%8C%20(2025.%204.%205.)/">빅데이터분석기사 기출문제 10회(2025.4.5.)</a></p><div class="content"><h1 id="문제-풀기-앞서-🧨"><a href="#문제-풀기-앞서-🧨" class="headerlink" title="문제 풀기 앞서 🧨"></a>문제 풀기 앞서 🧨</h1><ul>
+<li><strong>문제집 📚</strong>: 2026 이기적 빅데이터 분석기사 필기 &#x2F; 영진닷컴</li>
+<li>** 배경설명**: 즉흥적으로 시험접수 마치고 바로 예스24 중고에서 필기 책을 시켰답니다. 근데 5일이 지나도 출고가 되지 않고 전화도 받지 않아 문의 남겨도 답변도 없어 이번 시험은 취소해야 하나 싶었어요. 월요일에 되어서 다시 전화하니까 휴가 중이었다고 하시네요. 미리 공지라도 해줬으면 시험 한달 남은 수험생으로서 덜 불편했을텐데 라는 아쉬운 마음으로 주문 취소 부탁드리고 교보문고에서 새 책으로 주문했답니다! 🤓 급할 때에는 중고보다 새 책이 나은 것 같아요! </li>
+<li>책 하루 만에 받고 바로 기출공략으로 몸풀기했어요! 51.25점&#x2F;60점. 처음 풀었는데 희망적이네요. 안정적인 궤도에 오르도록 오답노트하고 이론 공부해야겠어요!</li>
+</ul>
+<h2 id="1-문제풀기-19-10-19-45-총점-205-4-51-25점-불합격"><a href="#1-문제풀기-19-10-19-45-총점-205-4-51-25점-불합격" class="headerlink" title="1. 문제풀기(19:10~19:45) 총점: 205&#x2F;4 &#x3D; 51.25점 &#x3D;&gt; 불합격"></a>1. 문제풀기(19:10~19:45) 총점: 205&#x2F;4 &#x3D; 51.25점 &#x3D;&gt; 불합격</h2><p>1과목 빅데이터분석 기사 &#x3D;&gt; 70점</p>
+<ol>
+<li>3 o</li>
+<li>3 x</li>
+<li>2 o</li>
+<li>3 o</li>
+<li>1 o</li>
+<li>2 o</li>
+<li>4 o</li>
+<li>4 o</li>
+<li>3 x</li>
+<li>3 x</li>
+<li>4 o</li>
+<li>3 o</li>
+<li>2 x</li>
+<li>4 x</li>
+<li>4 o</li>
+<li>3 o</li>
+<li>3 o</li>
+<li>4 o</li>
+<li>4 x </li>
+<li>1 o<br>2과목 빅데이터 탐색 &#x3D;&gt; 40점</li>
+<li>3 x</li>
+<li>3 ? x</li>
+<li>3 o</li>
+<li>? x</li>
+<li>2 o</li>
+<li>1 o</li>
+<li>? x</li>
+<li>2 o</li>
+<li>3 ? x</li>
+<li>2 ? x </li>
+<li>4 o</li>
+<li>4 ? x </li>
+<li>4 ?x</li>
+<li>2 ?x</li>
+<li>2x</li>
+<li>2 x</li>
+<li>4 o</li>
+<li>1 o</li>
+<li>3 x </li>
+<li>2 o<br>3과목 빅데이터 모델링 &#x3D;&gt; 55점</li>
+<li>2 o</li>
+<li>2  o</li>
+<li>1 x</li>
+<li>4 ? x</li>
+<li>4 ? x</li>
+<li>3 o</li>
+<li>4 o</li>
+<li>3 o</li>
+<li>4 o</li>
+<li>4? o</li>
+<li>3? o</li>
+<li>4 o</li>
+<li>3 x</li>
+<li>3? x</li>
+<li>3 o</li>
+<li>2? x</li>
+<li>4 o</li>
+<li>2 x</li>
+<li>4? x </li>
+<li>3?x<br>4과목 빅데이터 결과 해석 &#x3D;&gt; 40점</li>
+<li>2 x</li>
+<li>2? x</li>
+<li>2 o</li>
+<li>4 o</li>
+<li>1 o</li>
+<li>4 x</li>
+<li>1? o</li>
+<li>4 x</li>
+<li>3 x</li>
+<li>2 x</li>
+<li>1 x</li>
+<li>1? x</li>
+<li>2 o </li>
+<li>4? o</li>
+<li>1? o</li>
+<li>4 x</li>
+<li>3 x</li>
+<li>3 x</li>
+<li>1 x</li>
+<li>3 o</li>
+</ol>
+<h2 id="2-오답노트"><a href="#2-오답노트" class="headerlink" title="2. 오답노트"></a>2. 오답노트</h2><p>2과목 빅데이터 탐색</p>
+<h3 id="21-변수-선택-Feature-Selection-알고리즘-기법에-해당하지-않는-것은"><a href="#21-변수-선택-Feature-Selection-알고리즘-기법에-해당하지-않는-것은" class="headerlink" title="21.  변수 선택(Feature Selection) 알고리즘 기법에 해당하지 않는 것은?"></a>21.  변수 선택(Feature Selection) 알고리즘 기법에 해당하지 않는 것은?</h3><pre><code>1) 전진선택법
+2) 후진제거법
+3) 단계별 선택법 =&gt; 나의 답 *(전진 선택과 후진 제거를 결합한 방식으로 변수 추가와 제거를 반복하며 최적 조합을 찾는 변수 선택 알고리즘 방법)*
+4) **상호 정보량 확인** =&gt; 정답 
+</code></pre>
+<h3 id="24-100-200-300의-값을-z-score로-변환할-때-표준편차-100으로-정하고-변환함수-f-x-ax-b를-사용하였을-때-a-b의-값은-중요한데-잘-모르겠음"><a href="#24-100-200-300의-값을-z-score로-변환할-때-표준편차-100으로-정하고-변환함수-f-x-ax-b를-사용하였을-때-a-b의-값은-중요한데-잘-모르겠음" class="headerlink" title="24. 100, 200, 300의 값을 z-score로 변환할 때, 표준편차 100으로 정하고 변환함수 f(x)&#x3D; ax+b를 사용하였을 때 a+b의 값은? (중요한데 잘 모르겠음)"></a>24. 100, 200, 300의 값을 z-score로 변환할 때, 표준편차 100으로 정하고 변환함수 f(x)&#x3D; ax+b를 사용하였을 때 a+b의 값은? (중요한데 잘 모르겠음)</h3><ol>
+<li>평균: 100+200+300 &#x2F; 3 &#x3D; 200</li>
+<li>표준편차 &#x3D; 100</li>
+<li>z-score &#x3D; x-평균 &#x2F; 표준편차</li>
+<li>계수 &#x3D; 1&#x2F; 100</li>
+<li>상수 b &#x3D; - 평균&#x2F;표준편차 &#x3D; 200&#x2F;100 &#x3D;-2</li>
+<li>a+b &#x3D; 0.01-2</li>
+</ol>
+<h3 id="29-상자그림에서-IQR에-대한-설명으로-잘못된-것은"><a href="#29-상자그림에서-IQR에-대한-설명으로-잘못된-것은" class="headerlink" title="29. 상자그림에서 IQR에 대한 설명으로 잘못된 것은?"></a>29. 상자그림에서 IQR에 대한 설명으로 잘못된 것은?</h3><pre><code>1) IQR은 데이터의 중앙 50% 범위를 나타낸다. 
+2) IQR은 Q1-Q3로 계산된다. =&gt; 정답 IQR = Q3 - Q1
+3) 이상치에 판별로 활용된다.
+4) Q1은 하위 25% 지점의 값이다. 
+</code></pre>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-08-09T07:52:14.470Z" title="2025. 8. 9. 오후 4:52:14">2025-08-09</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2026-03-20T12:05:59.077Z" title="2026. 3. 20. 오후 9:05:59">2026-03-20</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Studying/">Studying</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/">Certification</a><span> / </span><a class="link-muted" href="/categories/Studying/Certification/Bigdata-Analytics/">Bigdata Analytics</a></span><span class="level-item">5분안에 읽기 (약 771 단어)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2025/08/09/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%ED%95%84%EA%B8%B0/%EC%A0%9C3%EA%B3%BC%EB%AA%A9/%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4/">Chapter 3. Decision Tree</a></p><div class="content"><p>definition:  a non-parametric supervised learning algorithm, which is utilized for <strong>both classification and regression tasks</strong>. It has a hierarchical, tree structure, which consists of a root node, branches, internal nodes and leaf nodes.</p>
+<p>This process of splitting is then repeated in a top-down, recursive manner until all, or the majority of records have been classified under specific class labels.<br>위에서 아래로 나아가며 노드 내 동질성은 커지고, 노드 간 이질성이 커지는 방향으로 가지가 발산함.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>이산형목표변수</th>
+<th>연속형목표변수</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CHAID</td>
+<td>카이제곱통계량</td>
+<td>ANOVA F통계량</td>
+</tr>
+<tr>
+<td>CART</td>
+<td>지니계수</td>
+<td>분산감소량</td>
+</tr>
+<tr>
+<td>C5.0</td>
+<td>엔트로피지수</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="1-분류-범주-형에서의-분할-방법"><a href="#1-분류-범주-형에서의-분할-방법" class="headerlink" title="1. 분류(범주)형에서의 분할 방법"></a>1. 분류(범주)형에서의 분할 방법</h4><ol>
+<li><p>CHAID(Chi-Square Automatic Interaction Detection): a predictive model used to forecast scenarios and draw conclusions.<br><strong>chi-square value</strong>: the difference between a standard, expected scenario and the actual results observed in your data (the maximum chi-square value &#x3D; the strongest relationship between two variables out of found chi-square values.)</p>
+</li>
+<li><p>CART(Classification and Regression Trees): non-parametric technique that produces either classification or regression trees, depending on whether the dependent variable is categorical or numeric, respectively. &#x3D;&gt; Gini Impurity<br> Used by the CART algorithm, Gini impurity is a measure of <strong>how often a randomly chosen element from the set would be incorrectly labeled</strong> if it was randomly labeled according to the distribution of labels in the subset. Gini impurity can be computed by summing the probability</p>
+</li>
+<li><p>C4.5, C5.0:  &#x3D;&gt; Entropy<br> Entropy is a measure of the amount of uncertainty in the (data) set S. In ID3, entropy is calculated for each remaining attribute. The attribute with the smallest entropy is used to split the set S on this iteration. <strong>The higher the entropy, the higher the potential to improve the classification here.</strong></p>
+</li>
+</ol>
+<ul>
+<li>Tests in CART are always binary, but C4.5 allows two or more outcomes.</li>
+<li>CART uses the Gini diversity index to rank tests, whereas C4.5 uses information-based criteria.</li>
+<li>CART prunes trees using a cost-complexity model whose parameters are estimated by cross-validation; C4.5 uses a single-pass algorithm derived from binomial confidence limits.</li>
+<li></li>
+<li>With respect to missing data, CART looks for surrogate tests that approximate the outcomes when the tested attribute has an unknown value, but C4.5 apportions the case probabilistically among the outcomes. This algorithm typically utilizes <strong>Gini impurity</strong> to identify the ideal attribute to split on. Gini impurity measures how often a randomly chosen attribute is misclassified. When evaluating using Gini impurity, a lower value is more ideal.</li>
+</ul>
+<h4 id="2-회귀-연속-형에서의-분할-방법"><a href="#2-회귀-연속-형에서의-분할-방법" class="headerlink" title="2. 회귀(연속)형에서의 분할 방법"></a>2. 회귀(연속)형에서의 분할 방법</h4><ol>
+<li><p>CHAID: ANOVA(Analysis of Variance, 분산분석), F-통계량</p>
+<ol>
+<li>ANOVA(Analysis of Variance, 분산분석): 두 개 이상의 그룹 간 평균차이를 비교하는 통계방법<ol>
+<li>각 그룹간 평균 차가 우연히 발생했는지 아니면 통계적으로 유의미한지</li>
+<li>집단 내 변동과 집단 간 변동을 비교하여 검증</li>
+<li>F-통계량(F-statistics)을 통해 p-value(유의확률)을 계산하여 그룹 간 차이를 평가</li>
+</ol>
+</li>
+<li>F-통계량: 집단 간 변동(between group variance) &#x2F; 집단 내 변동(within group variance)<ol>
+<li>p-value가 0.05 미만이면 유의미하다고 판단함</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>CART: 분산감소량</p>
+</li>
+</ol>
+<h3 id="Entropy-and-information-gain"><a href="#Entropy-and-information-gain" class="headerlink" title="Entropy and information gain"></a>Entropy and information gain</h3><ol>
+<li><p>entropy<br>It’s difficult to explain information gain without first discussing entropy. <strong>Entropy is a concept that stems from information theory</strong>, which measures the impurity of the sample values. It is defined with by the following formula, where:</p>
+</li>
+<li><p>Gini impurity<br>the probability of <strong>incorrectly classifying random data point</strong> in the dataset if it were labeled based on the class distribution of the dataset. Similar to entropy, if set, S, is pure—i.e. belonging to one class) then, its impurity is zero.</p>
+</li>
+</ol>
+<p>source: <a target="_blank" rel="noopener" href="https://www.ibm.com/think/topics/decision-trees">https://www.ibm.com/think/topics/decision-trees</a><br><a target="_blank" rel="noopener" href="https://www.adience.com/blog/how-to/a-guide-to-chaid-a-decision-tree-algorithm-for-data-analysis/">https://www.adience.com/blog/how-to/a-guide-to-chaid-a-decision-tree-algorithm-for-data-analysis/</a><br><a target="_blank" rel="noopener" href="https://blog.naver.com/sg90929/223756750420?isInf=true&infParams=eyJzY2lkIjoxNzA3MDE3ODkyNjk3MjgsInNraWQiOjMwMzQyNzc1ODMzNDE3NiwiY2lkIjo3OTAzNTA1NTUxNjk2NjQsInF1ZXJ5IjoiYW5vdmEifQ==&trackingCode=nx">https://blog.naver.com/sg90929/223756750420?isInf=true&amp;infParams=eyJzY2lkIjoxNzA3MDE3ODkyNjk3MjgsInNraWQiOjMwMzQyNzc1ODMzNDE3NiwiY2lkIjo3OTAzNTA1NTUxNjk2NjQsInF1ZXJ5IjoiYW5vdmEifQ==&amp;trackingCode=nx</a></p>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous is-invisible is-hidden-mobile"><a href="/categories/Studying/Certification/Bigdata-Analytics/page/0/">이전</a></div><div class="pagination-next"><a href="/categories/Studying/Certification/Bigdata-Analytics/page/2/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link is-current" href="/categories/Studying/Certification/Bigdata-Analytics/">1</a></li><li><a class="pagination-link" href="/categories/Studying/Certification/Bigdata-Analytics/page/2/">2</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/prof.png" alt="Oli"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Oli</p><p class="is-size-6 is-block">Oli&#039;s Bookshelf</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Republic of Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives/"><p class="title">149</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories/"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags/"><p class="title">114</p></a></div></div></nav></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">링크</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://www.instagram.com/olidrawsfreiheit" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Instagram</span></span><span class="level-right"><span class="level-item tag">www.instagram.com</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/About/"><span class="level-start"><span class="level-item">About</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Author-%EC%9E%91%EA%B0%80/"><span class="level-start"><span class="level-item">Author / 작가</span></span><span class="level-end"><span class="level-item tag">37</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/"><span class="level-start"><span class="level-item">Book</span></span><span class="level-end"><span class="level-item tag">70</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/American/"><span class="level-start"><span class="level-item">American</span></span><span class="level-end"><span class="level-item tag">12</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/American/1900-1950/"><span class="level-start"><span class="level-item">1900~1950</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/American/1950-2000/"><span class="level-start"><span class="level-item">1950~2000</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/American/2000-2050/"><span class="level-start"><span class="level-item">2000~2050</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Book/Chinese/"><span class="level-start"><span class="level-item">Chinese</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/Chinese/1950-2000/"><span class="level-start"><span class="level-item">1950~2000</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/Chinese/2000-2050/"><span class="level-start"><span class="level-item">2000~2050</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Book/European/"><span class="level-start"><span class="level-item">European</span></span><span class="level-end"><span class="level-item tag">22</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/European/1750-1800/"><span class="level-start"><span class="level-item">1750~1800</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/European/1800-1850/"><span class="level-start"><span class="level-item">1800~1850</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/European/1900-1950/"><span class="level-start"><span class="level-item">1900~1950</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/European/1950-2000/"><span class="level-start"><span class="level-item">1950~2000</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/European/2000-2050/"><span class="level-start"><span class="level-item">2000-2050</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/European/2000-2050/"><span class="level-start"><span class="level-item">2000~2050</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Book/Japanese/"><span class="level-start"><span class="level-item">Japanese</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/Japanese/1900-1950/"><span class="level-start"><span class="level-item">1900~1950</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/Japanese/2000-2050/"><span class="level-start"><span class="level-item">2000~2050</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Book/Korean/"><span class="level-start"><span class="level-item">Korean</span></span><span class="level-end"><span class="level-item tag">21</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/Korean/1950-2000/"><span class="level-start"><span class="level-item">1950~2000</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/Korean/2000-2050/"><span class="level-start"><span class="level-item">2000~2050</span></span><span class="level-end"><span class="level-item tag">20</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Book/Russian/"><span class="level-start"><span class="level-item">Russian</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/Book/Russian/1800-1900/"><span class="level-start"><span class="level-item">1800~1900</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Book/Russian/1850-1900/"><span class="level-start"><span class="level-item">1850~1900</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/Data-Science/"><span class="level-start"><span class="level-item">Data Science</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Studying/"><span class="level-start"><span class="level-item">Studying</span></span><span class="level-end"><span class="level-item tag">12</span></span></a><ul><li><a class="level is-mobile" href="/categories/Studying/Certification/"><span class="level-start"><span class="level-item">Certification</span></span><span class="level-end"><span class="level-item tag">11</span></span></a><ul><li><a class="level is-mobile" href="/categories/Studying/Certification/Bigdata-Analytics/"><span class="level-start"><span class="level-item">Bigdata Analytics</span></span><span class="level-end"><span class="level-item tag">11</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Studying/WebAPI/"><span class="level-start"><span class="level-item">WebAPI</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/"><span class="level-start"><span class="level-item">참고자료</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-13T08:49:42.872Z">2026-03-13</time></p><p class="title"><a href="/2026/03/13/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EC%B1%85/%EC%88%98%EC%98%81%EC%9D%98%20%EA%B3%BC%ED%95%99/">브렛 호크 - 수영의 과학</a></p><p class="categories"><a href="/categories/Book/">Book</a> / <a href="/categories/Book/Korean/">Korean</a> / <a href="/categories/Book/Korean/2000-2050/">2000~2050</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-07T05:35:20.266Z">2026-03-07</time></p><p class="title"><a href="/2026/03/07/Readings/2026_%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC_%EC%8B%A4%EA%B8%B0/%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EC%9D%98%20%EC%9D%B4%EB%A6%84%EB%93%A4%EC%9D%98%20%EB%B0%B0%EA%B2%BD%EC%9D%80?/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-07T05:00:00.000Z">2026-03-07</time></p><p class="title"><a href="/2026/03/07/Readings/2026_%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC_%EC%8B%A4%EA%B8%B0/%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC%EA%B0%80%20%EC%B2%B4%EA%B0%90%EB%90%98%EC%A7%80%20%EC%95%8A%EC%9D%84%20%EB%95%8C?/">정규분포가 무엇일까?</a></p><p class="categories"><a href="/categories/Data-Science/">Data Science</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-01T08:50:06.982Z">2026-03-01</time></p><p class="title"><a href="/2026/03/01/Readings/%EC%84%9C%EC%A0%81%20%EA%B8%B0%EC%88%A0%20%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%9A%B4%EC%98%81/%EA%B8%B0%EC%88%A0/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/%EC%8B%A4%EA%B8%B0/%EC%BD%94%EB%9E%A9%EC%97%90%EC%84%9C%20%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC%20%EC%A4%80%EB%B9%84%ED%95%A0%20%EB%95%8C%20%EC%97%90%EB%9F%AC/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-01-16T08:52:03.296Z">2026-01-16</time></p><p class="title"><a href="/2026/01/16/Readings/2026_%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC_%EC%8B%A4%EA%B8%B0/%EC%A4%80%EB%B9%84%EC%9D%BC%EC%A0%95/"> </a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/03/"><span class="level-start"><span class="level-item">3월 2026</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2026/01/"><span class="level-start"><span class="level-item">1월 2026</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/12/"><span class="level-start"><span class="level-item">12월 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/11/"><span class="level-start"><span class="level-item">11월 2025</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/10/"><span class="level-start"><span class="level-item">10월 2025</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/09/"><span class="level-start"><span class="level-item">9월 2025</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/08/"><span class="level-start"><span class="level-item">8월 2025</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/07/"><span class="level-start"><span class="level-item">7월 2025</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/06/"><span class="level-start"><span class="level-item">6월 2025</span></span><span class="level-end"><span class="level-item tag">98</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/"><span class="tag">#</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Kafkaesque/"><span class="tag">#Kafkaesque</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Orwellian/"><span class="tag">#Orwellian</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/SF/"><span class="tag">#SF</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/api/"><span class="tag">#api</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B1%B0%EC%9D%B8/"><span class="tag">#거인</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%84%EB%AA%BD%EC%A3%BC%EC%9D%98/"><span class="tag">#계몽주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%A0%EC%A0%84/"><span class="tag">#고전</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%A0%EC%A0%84%EC%A3%BC%EC%9D%98/"><span class="tag">#고전주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%BC%ED%95%99/"><span class="tag">#과학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B5%AC%EB%8F%84%EC%86%8C%EC%84%A4/"><span class="tag">#구도소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B5%AC%EC%B0%BD%EB%AA%A8/"><span class="tag">#구창모</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B8%80/"><span class="tag">#글</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B8%88%EC%84%9C/"><span class="tag">#금서</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%82%AD%EB%A7%8C%EC%A3%BC%EC%9D%98/"><span class="tag">#낭만주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8F%85%EB%A6%BD%EC%9A%B4%EB%8F%99/"><span class="tag">#독립운동</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8F%85%EC%84%9C%EC%97%90%EC%84%B8%EC%9D%B4/"><span class="tag">#독서에세이</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8F%85%EC%9D%BC%EB%AC%B8%ED%95%99/"><span class="tag">#독일문학</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8F%85%EC%9E%AC/"><span class="tag">#독재</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%8F%99%EC%96%91%EC%B2%A0%ED%95%99/"><span class="tag">#동양철학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%94%94%EC%8A%A4%ED%86%A0%ED%94%BC%EC%95%84%EC%86%8C%EC%84%A4/"><span class="tag">#디스토피아소설</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%9F%AC%EC%8B%9C%EC%95%84%EB%AC%B8%ED%95%99/"><span class="tag">#러시아문학</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%9F%AC%EC%8B%9C%EC%95%84%EC%86%8C%EC%84%A4/"><span class="tag">#러시아소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%9F%AC%EC%8B%9C%EC%95%84%ED%98%81%EB%AA%85/"><span class="tag">#러시아혁명</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%A1%9C%EB%B4%87/"><span class="tag">#로봇</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%A9%94%EC%9D%B4%EC%A7%80%EC%8B%9C%EB%8C%80/"><span class="tag">#메이지시대</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AA%B0%EB%9D%BD%EA%B7%80%EC%A1%B1/"><span class="tag">#몰락귀족</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AA%B0%EB%9D%BD%EC%99%95%EC%A1%B1/"><span class="tag">#몰락왕족</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AF%B8%EA%B5%AD%EB%AC%B8%ED%95%99/"><span class="tag">#미국문학</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AF%B8%EA%B5%AD%EC%86%8C%EC%84%A4/"><span class="tag">#미국소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AF%BC%EC%A3%BC%ED%99%94/"><span class="tag">#민주화</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B0%98%ED%95%AD/"><span class="tag">#반항</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B2%95%EB%A5%A0/"><span class="tag">#법률</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B6%80%EC%A1%B0%EB%A6%AC%EC%86%8C%EC%84%A4/"><span class="tag">#부조리소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/"><span class="tag">#빅데이터분석기사</span><span class="tag">11</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B9%85%ED%86%A0%EB%A6%AC%EC%95%84%EC%8B%9C%EB%8C%80/"><span class="tag">#빅토리아시대</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%82%AC%EB%9E%91/"><span class="tag">#사랑</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%82%AC%ED%9A%8C%EB%B9%84%ED%8C%90%EC%86%8C%EC%84%A4/"><span class="tag">#사회비판소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%83%81%EC%B2%98/"><span class="tag">#상처</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%84%B1%EC%9E%A5%EC%86%8C%EC%84%A4/"><span class="tag">#성장소설</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%86%8C%EC%84%A4/"><span class="tag">#소설</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%86%8C%EC%85%9C%EB%AF%B8%EB%94%94%EC%96%B4/"><span class="tag">#소셜미디어</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8A%AC%ED%94%88%EC%86%8C%EC%84%A4/"><span class="tag">#슬픈소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8B%A4%EC%A1%B4%EC%A3%BC%EC%9D%98/"><span class="tag">#실존주의</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8B%AC%EB%A6%AC%EC%86%8C%EC%84%A4/"><span class="tag">#심리소설</span><span class="tag">12</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%95%84%EC%9D%BC%EB%9E%9C%EB%93%9C%EB%AC%B8%ED%95%99/"><span class="tag">#아일랜드문학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%97%90%EC%84%B8%EC%9D%B4/"><span class="tag">#에세이</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%97%AC%EC%84%B1%EB%B3%80%ED%98%B8%EC%82%AC/"><span class="tag">#여성변호사</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%97%AD%EC%82%AC%EC%86%8C%EC%84%A4/"><span class="tag">#역사소설</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%98%81%EA%B5%AD%EB%9F%B0%EB%8D%98%EC%9C%A0%ED%95%99/"><span class="tag">#영국런던유학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%98%81%EA%B5%AD%EB%AC%B8%ED%95%99/"><span class="tag">#영국문학</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%98%81%EA%B5%AD%EC%86%8C%EC%84%A4/"><span class="tag">#영국소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%98%81%EC%96%B4%EC%9B%90%EC%84%9C/"><span class="tag">#영어원서</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9A%B0%ED%99%94/"><span class="tag">#우화</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9C%84%EB%A1%9C%EC%86%8C%EC%84%A4/"><span class="tag">#위로소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84%EB%AC%B8%ED%95%99/"><span class="tag">#이탈리아문학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9D%B8%EB%AC%B8%EA%B5%90%EC%96%91%EC%84%9C/"><span class="tag">#인문교양서</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9D%B8%EB%AC%B8%EC%9E%A1%EC%A7%80/"><span class="tag">#인문잡지</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9D%BC%EB%B3%B8%EB%AC%B8%ED%95%99/"><span class="tag">#일본문학</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9D%BC%EB%B3%B8%EC%86%8C%EC%84%A4/"><span class="tag">#일본소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EA%B8%B0%EA%B2%B0%EC%A0%95/"><span class="tag">#자기결정</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EA%B8%B0%ED%83%90%EC%83%89%EC%9D%98%EC%97%AC%EC%A0%95/"><span class="tag">#자기탐색의여정</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EB%B3%B8%EC%A3%BC%EC%9D%98%EB%B9%84%ED%8C%90/"><span class="tag">#자본주의비판</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EC%9C%A0/"><span class="tag">#자유</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EC%A0%84%EC%A0%81%EC%86%8C%EC%84%A4/"><span class="tag">#자전적소설</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A0%84%EC%9E%90%EA%B3%B5%ED%95%99/"><span class="tag">#전자공학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A0%84%EC%9F%81/"><span class="tag">#전쟁</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A0%8A%EC%9D%80%EC%9E%91%EA%B0%80/"><span class="tag">#젊은작가</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A1%B0%EC%84%A0%EC%8B%9C%EB%8C%80/"><span class="tag">#조선시대</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A1%B0%EC%A7%80%EC%95%84%EC%8B%9C%EB%8C%80/"><span class="tag">#조지아시대</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A2%85%EA%B5%90%EC%A0%81%EC%86%8C%EC%84%A4/"><span class="tag">#종교적소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A3%BD%EC%9D%8C/"><span class="tag">#죽음</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A4%91%EA%B5%AD%EB%AC%B8%ED%95%99/"><span class="tag">#중국문학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A4%91%EA%B5%AD%EC%B2%A0%ED%95%99/"><span class="tag">#중국철학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A7%91%EC%B0%A9/"><span class="tag">#집착</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B0%A8%EB%B3%84/"><span class="tag">#차별</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B2%A0%ED%95%99/"><span class="tag">#철학</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B2%A0%ED%95%99%EC%86%8C%EC%84%A4/"><span class="tag">#철학소설</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%A7%B5/"><span class="tag">#카카오맵</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%A7%B5api/"><span class="tag">#카카오맵api</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%86%A8%EC%8A%A4%ED%86%A0%EC%9D%B4%EC%A3%BC%EC%9D%98/"><span class="tag">#톨스토이주의</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8E%B8%EA%B2%AC/"><span class="tag">#편견</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%94%84%EB%9E%91%EC%8A%A4%EB%AC%B8%ED%95%99/"><span class="tag">#프랑스문학</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%94%BC%ED%84%B0%EB%B9%84%EC%97%90%EB%A6%AC/"><span class="tag">#피터비에리</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%9C%EA%B5%AD%EB%AC%B8%ED%95%99/"><span class="tag">#한국문학</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%9C%EA%B5%AD%EC%86%8C%EC%84%A4/"><span class="tag">#한국소설</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%9C%EA%B5%AD%EC%99%B8%EB%8C%80/"><span class="tag">#한국외대</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%AD%EC%9F%81/"><span class="tag">#항쟁</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%99%8D%EC%BD%A9%EB%AC%B8%ED%95%99/"><span class="tag">#홍콩문학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%9C%B4%EB%A8%B8%EB%8B%88%EC%A6%98%EC%86%8C%EC%84%A4/"><span class="tag">#휴머니즘소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CRISP-DM/"><span class="tag">CRISP-DM</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/DBSCAN/"><span class="tag">DBSCAN</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Ensemble/"><span class="tag">Ensemble</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HDFS/"><span class="tag">HDFS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PCA/"><span class="tag">PCA</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ROC/"><span class="tag">ROC</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/SVM/"><span class="tag">SVM</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Scipy/"><span class="tag">Scipy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Statistics/"><span class="tag">Statistics</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TF-IDF/"><span class="tag">TF-IDF</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B3%A0%EC%A0%84/"><span class="tag">고전</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B8%88%EC%84%9C/"><span class="tag">금서</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%85%B8%EB%B2%A8%EB%AC%B8%ED%95%99%EC%83%81%ED%9B%84%EB%B3%B4/"><span class="tag">노벨문학상후보</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%89%B4%EC%8A%A4/"><span class="tag">뉴스/</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AC%B8%ED%95%99%EC%9D%B4%EB%A1%A0/"><span class="tag">문학이론</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AF%B8%EA%B5%AD%EB%AC%B8%ED%95%99/"><span class="tag">미국문학</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%84%9C%EC%82%AC%EA%B8%B0%EB%B2%95/"><span class="tag">서사기법</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8B%9C%EC%A0%90/"><span class="tag">시점</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%A4%91%EA%B5%AD%EC%86%8C%EC%84%A4/"><span class="tag">중국소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%BA%90%EB%82%98%EB%8B%A4%EC%86%8C%EC%84%A4/"><span class="tag">캐나다소설</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%88%AC%EC%9E%90%EC%A0%84%EB%9E%B5/"><span class="tag">투자전략/</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%8E%98%EB%AF%B8%EB%8B%88%EC%A6%98/"><span class="tag">페미니즘</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%94%84%EB%9E%91%EC%8A%A4%EB%AC%B8%ED%95%99/"><span class="tag">프랑스문학</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">업데이트 소식 받기</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="구독"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="구독"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Oli Sharing Place" height="28"></a><p class="is-size-7"><span>&copy; 2026 진오리</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
