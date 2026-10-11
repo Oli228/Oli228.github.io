@@ -1,17 +1,17 @@
 [
   {
-    "title": "조지 오웰 - 1984",
-    "author": "George Orwell",
-    "city": "Isle of Jura",
-    "country": "Scotland",
-    "path": "2026/04/29/Readings/서적 기술 블로그 운영/책/1984_한국어/"
-  },
-  {
     "title": "George Orwell - 1984 (1949)",
     "author": "George Orwell",
     "city": "Isle of Jura",
     "country": "Scotland",
     "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/1984/"
+  },
+  {
+    "title": "조지 오웰 - 1984",
+    "author": "George Orwell",
+    "city": "Isle of Jura",
+    "country": "Scotland",
+    "path": "2026/04/29/Readings/서적 기술 블로그 운영/책/1984_한국어/"
   },
   {
     "title": "Caroline Wahl - 22 Bahnen (스물두번째 레인)",
@@ -75,14 +75,6 @@
     "cover": "/images/covers/charlotte-brontë.jpg"
   },
   {
-    "title": "Elena Ferrante - My Brilliant Friend(2012)",
-    "author": "[[Elena Ferrante]]",
-    "city": "Naples",
-    "country": "Italy",
-    "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/My Brilliant Friend/",
-    "cover": "/images/covers/elena-ferrante.jpg"
-  },
-  {
     "title": "다니엘라 루스/그레고리 몬 - 천재 로봇공학자 다니엘라루스의 MIT 로봇 수업",
     "author": "다니엘라루스",
     "city": "Cambridge",
@@ -99,6 +91,14 @@
     "cover": "/images/covers/jane-austin-pride-and-prejudice-1813.jpg"
   },
   {
+    "title": "Elena Ferrante - My Brilliant Friend(2012)",
+    "author": "[[Elena Ferrante]]",
+    "city": "Naples",
+    "country": "Italy",
+    "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/My Brilliant Friend/",
+    "cover": "/images/covers/elena-ferrante.jpg"
+  },
+  {
     "title": "[[Andy Weir]] - Project Hail Mary(2021)",
     "author": "[[Andy Weir]]",
     "city": "Mountain View",
@@ -107,19 +107,19 @@
     "cover": "/images/covers/andy-weir-project-hail-mary-2021.jpg"
   },
   {
+    "title": "Claire Keegan -Small Things Like These(2022)",
+    "author": "[[Claire Keegan]]",
+    "city": "County Wexford",
+    "country": "Island",
+    "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/Small Things Like These/"
+  },
+  {
     "title": "John Williams - Stoner(1965)",
     "author": "[[John Williams]]",
     "city": "Denver",
     "country": "United States",
     "path": "2025/06/17/Readings/서적 기술 블로그 운영/책/Stoner/",
     "cover": "/images/covers/john-williams-stoner-1965.jpg"
-  },
-  {
-    "title": "Claire Keegan -Small Things Like These(2022)",
-    "author": "[[Claire Keegan]]",
-    "city": "County Wexford",
-    "country": "Island",
-    "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/Small Things Like These/"
   },
   {
     "title": "[[Erich Fromm]] -The Art of Loving(1956)",
@@ -147,19 +147,19 @@
     "path": "2025/09/21/Readings/서적 기술 블로그 운영/책/The Lost Bookshop/"
   },
   {
+    "title": "Goethe - The Sorrow of Young Werther(1774)",
+    "author": "[[Goethe]]",
+    "city": "Wetzlar",
+    "country": "Germany",
+    "path": "2025/06/02/Readings/서적 기술 블로그 운영/책/The Sorrow of Young Werther/"
+  },
+  {
     "title": "[[한강]] - The White Book(2016)",
     "author": "[[한강]]",
     "city": "Gwangju",
     "country": "Republic of Korea",
     "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/The White Book/",
     "cover": "/images/covers/한강-the-white-book-2016.jpg"
-  },
-  {
-    "title": "Goethe - The Sorrow of Young Werther(1774)",
-    "author": "[[Goethe]]",
-    "city": "Wetzlar",
-    "country": "Germany",
-    "path": "2025/06/02/Readings/서적 기술 블로그 운영/책/The Sorrow of Young Werther/"
   },
   {
     "title": "[[Harper Lee]] -To kill a Mockingbird(1960)",
@@ -170,6 +170,13 @@
     "cover": "/images/covers/harper-lee.jpg"
   },
   {
+    "title": "Caroline Wahl - Windstärke (폭풍으로 들어가기)",
+    "author": "Caroline Wahl",
+    "city": "Koln",
+    "country": "Germany",
+    "path": "2026/03/30/Readings/서적 기술 블로그 운영/책/Windstärke/"
+  },
+  {
     "title": "[[Françoise Sagan]] - Toxique(1964)",
     "author": "[[Françoise Sagan]]",
     "city": "Paris",
@@ -177,11 +184,11 @@
     "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/Toxique/"
   },
   {
-    "title": "Caroline Wahl - Windstärke (폭풍으로 들어가기)",
-    "author": "Caroline Wahl",
-    "city": "Koln",
-    "country": "Germany",
-    "path": "2026/03/30/Readings/서적 기술 블로그 운영/책/Windstärke/"
+    "title": "베르나르 베르베르 - 개미 (1991)",
+    "author": "베르나르 베르베르",
+    "city": "Paris",
+    "country": "France",
+    "path": "2025/09/21/Readings/서적 기술 블로그 운영/책/개미/"
   },
   {
     "title": "Emily Bronte -Wuthering Heights(1847)",
@@ -192,20 +199,6 @@
     "cover": "/images/covers/emily-bronte-wuthering-heights-1847.jpg"
   },
   {
-    "title": "조무원 외 9명 - 권위(2021)",
-    "author": "조무원 외 9명",
-    "city": "Seoul",
-    "country": "Republic of Korea",
-    "path": "2025/09/21/Readings/서적 기술 블로그 운영/책/권위/"
-  },
-  {
-    "title": "베르나르 베르베르 - 개미 (1991)",
-    "author": "베르나르 베르베르",
-    "city": "Paris",
-    "country": "France",
-    "path": "2025/09/21/Readings/서적 기술 블로그 운영/책/개미/"
-  },
-  {
     "title": "최진영 - 구의 증명",
     "author": "최진영",
     "city": "Jeju",
@@ -213,18 +206,11 @@
     "path": "2025/07/27/Readings/서적 기술 블로그 운영/책/구의 증명/"
   },
   {
-    "title": "패트릭 브랑리 - 나는 메트로폴리탄 미술관의 경비원입니다",
-    "author": "패트릭 브랑리",
-    "city": "New York",
-    "country": "United States",
-    "path": "2026/03/22/Readings/서적 기술 블로그 운영/책/나는 메트로폴리탄 미술관의 경비원입니다/"
-  },
-  {
-    "title": "이졸데 카림 - 나르시시즘의 고통(2022)",
-    "author": "이졸데 카림",
-    "city": "Vienna",
-    "country": "Austria",
-    "path": "2025/07/07/Readings/서적 기술 블로그 운영/책/나르시시즘의 고통/"
+    "title": "조무원 외 9명 - 권위(2021)",
+    "author": "조무원 외 9명",
+    "city": "Seoul",
+    "country": "Republic of Korea",
+    "path": "2025/09/21/Readings/서적 기술 블로그 운영/책/권위/"
   },
   {
     "title": "정대건 - 급류 (2023)",
@@ -234,11 +220,25 @@
     "path": "2025/06/15/Readings/서적 기술 블로그 운영/책/급류/"
   },
   {
+    "title": "패트릭 브랑리 - 나는 메트로폴리탄 미술관의 경비원입니다",
+    "author": "패트릭 브랑리",
+    "city": "New York",
+    "country": "United States",
+    "path": "2026/03/22/Readings/서적 기술 블로그 운영/책/나는 메트로폴리탄 미술관의 경비원입니다/"
+  },
+  {
     "title": "김세라 - 나는 변호사다(2024)",
     "author": "[[김세라]]",
     "city": "Seoul",
     "country": "Republic of Korea",
     "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/나는 변호사다/"
+  },
+  {
+    "title": "이졸데 카림 - 나르시시즘의 고통(2022)",
+    "author": "이졸데 카림",
+    "city": "Vienna",
+    "country": "Austria",
+    "path": "2025/07/07/Readings/서적 기술 블로그 운영/책/나르시시즘의 고통/"
   },
   {
     "title": "김훈 - 남한산성(2007)",
@@ -249,18 +249,18 @@
     "cover": "/images/covers/남한산성.jpg"
   },
   {
+    "title": "이금이 - 너를 위한 B컷 (2023)",
+    "author": "이금이",
+    "city": "Cheongwon",
+    "country": "Republic of Korea",
+    "path": "2025/06/04/Readings/서적 기술 블로그 운영/책/너를 위한 B컷/"
+  },
+  {
     "title": "최진영 - 단 한 사람",
     "author": "최진영",
     "city": "Jeju",
     "country": "Republic of Korea",
     "path": "2025/06/17/Readings/서적 기술 블로그 운영/책/단 한 사람/"
-  },
-  {
-    "title": "나쓰메 소세키 - 도련님 (1906)",
-    "author": "나쓰메 소세키",
-    "city": "Tokyo",
-    "country": "Japan",
-    "path": "2025/07/02/Readings/서적 기술 블로그 운영/책/도련님/"
   },
   {
     "title": "Herman Hesse - 데미안(1919)",
@@ -269,6 +269,13 @@
     "country": "Switzerland",
     "path": "2025/06/17/Readings/서적 기술 블로그 운영/책/데미안/",
     "cover": "/images/covers/herman-hesse-싯다르타-1922.jpg"
+  },
+  {
+    "title": "나쓰메 소세키 - 도련님 (1906)",
+    "author": "나쓰메 소세키",
+    "city": "Tokyo",
+    "country": "Japan",
+    "path": "2025/07/02/Readings/서적 기술 블로그 운영/책/도련님/"
   },
   {
     "title": "George Orwell - 동물농장(1945)",
@@ -284,13 +291,6 @@
     "city": "Hong Kong",
     "country": "Hong Kong",
     "path": "2025/07/06/Readings/서적 기술 블로그 운영/책/동생/"
-  },
-  {
-    "title": "이금이 - 너를 위한 B컷 (2023)",
-    "author": "이금이",
-    "city": "Cheongwon",
-    "country": "Republic of Korea",
-    "path": "2025/06/04/Readings/서적 기술 블로그 운영/책/너를 위한 B컷/"
   },
   {
     "title": "나쓰메 소세키 - 마음(1914)",
@@ -315,6 +315,13 @@
     "path": "2025/09/20/Readings/서적 기술 블로그 운영/책/모스크바의 신사/"
   },
   {
+    "title": "Jeffrey Eugenides - 버진 수어사이드(1993)",
+    "author": "[[Jeffrey Eugenides]]",
+    "city": "Brooklyn",
+    "country": "United States",
+    "path": "2025/06/15/Readings/서적 기술 블로그 운영/책/버진 수어사이드/"
+  },
+  {
     "title": "Fredrik Backman - 불안한 사람들 (2019)",
     "author": "[[Fredrik Backman]]",
     "city": "Stockholm",
@@ -327,13 +334,6 @@
     "city": "Mitaka",
     "country": "Japan",
     "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/사양/"
-  },
-  {
-    "title": "Jeffrey Eugenides - 버진 수어사이드(1993)",
-    "author": "[[Jeffrey Eugenides]]",
-    "city": "Brooklyn",
-    "country": "United States",
-    "path": "2025/06/15/Readings/서적 기술 블로그 운영/책/버진 수어사이드/"
   },
   {
     "title": "Thornton Wilder - 산 루이스 레이의 다리(1927)",
@@ -358,18 +358,18 @@
     "path": "2025/06/17/Readings/서적 기술 블로그 운영/책/새의 선물/"
   },
   {
-    "title": "Franz Kafka - 소송(1925)",
-    "author": "[[Franz Kafka]]",
-    "city": "Prague",
-    "country": "Czech Republic",
-    "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/소송/"
-  },
-  {
     "title": "Anne Fadiman - 서재 결혼시키기(1998)",
     "author": "[[Anne Fadiman]]",
     "city": "Northampton",
     "country": "United States",
     "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/서재 결혼시키기/"
+  },
+  {
+    "title": "Franz Kafka - 소송(1925)",
+    "author": "[[Franz Kafka]]",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/소송/"
   },
   {
     "title": "하미나 외 7명 - 쉼(2024)",
@@ -423,6 +423,14 @@
     "cover": "/images/covers/lev-tolstoy-이반-일리치의-죽음-1886.jpg"
   },
   {
+    "title": "다자이 오사무 - 인간실격(1948)",
+    "author": "[[다자이 오사무]]",
+    "city": "Mitaka",
+    "country": "Japan",
+    "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/인간 실격/",
+    "cover": "/images/covers/다자이-오사무-사양-1947.jpg"
+  },
+  {
     "title": "피터 비에리 - 자기결정(2011)",
     "author": "Peter Bieri",
     "city": "Berlin",
@@ -444,14 +452,6 @@
     "path": "2025/10/16/Readings/서적 기술 블로그 운영/책/중용/"
   },
   {
-    "title": "다자이 오사무 - 인간실격(1948)",
-    "author": "[[다자이 오사무]]",
-    "city": "Mitaka",
-    "country": "Japan",
-    "path": "2025/06/06/Readings/서적 기술 블로그 운영/책/인간 실격/",
-    "cover": "/images/covers/다자이-오사무-사양-1947.jpg"
-  },
-  {
     "title": "권혁일 - 첫사랑의 침공(2024)",
     "author": "[[권혁일]]",
     "city": "Seoul",
@@ -464,13 +464,6 @@
     "city": "London",
     "country": "England",
     "path": "2025/06/17/Readings/서적 기술 블로그 운영/책/파묻힌 거인/"
-  },
-  {
-    "title": "김훈 - 하얼빈(2022)",
-    "author": "[[김훈]]",
-    "city": "Seoul",
-    "country": "Republic of Korea",
-    "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/하얼빈/"
   },
   {
     "title": "김진명 - 풍수전쟁(2023)",
@@ -486,6 +479,13 @@
     "country": "Republic of Korea",
     "path": "2025/06/15/Readings/서적 기술 블로그 운영/책/푸틴을 죽이는 완벽한 방법/",
     "cover": "/images/covers/김진명.jpg"
+  },
+  {
+    "title": "김훈 - 하얼빈(2022)",
+    "author": "[[김훈]]",
+    "city": "Seoul",
+    "country": "Republic of Korea",
+    "path": "2025/06/07/Readings/서적 기술 블로그 운영/책/하얼빈/"
   },
   {
     "title": "베르나르 베르베르 - 행성 1,2 (2022)",
